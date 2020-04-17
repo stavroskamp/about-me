@@ -1,6 +1,7 @@
 import React from "react";
 import { NavBar, Footer } from "../components";
 import styled from "@emotion/styled";
+import { PRIMARY_BG_COLOR } from "../constants/colors";
 
 const StyledWrapper = styled.div`
   display: flex;
@@ -10,6 +11,7 @@ const StyledWrapper = styled.div`
 
 const StyledSection = styled.section`
   flex: 1;
+  background-color: ${PRIMARY_BG_COLOR};
 `;
 
 const Layout = (props) => (
