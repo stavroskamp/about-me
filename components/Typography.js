@@ -2,21 +2,29 @@ import React from "react";
 import styled from "@emotion/styled";
 import { css } from "@emotion/core";
 
-const StyledParagraph = styled.p`
-  color: white;
-  font-family: "Lato", Arial, sans-serif;
+const StyledParagraph = styled.div`
+    color: white;
+    font-family: "Lato", Arial, sans-serif;
 
   /* p */
   ${(props) =>
-    props.variant === "p" &&
+    props.as === "p" &&
     css`
-      font-size: 1.2rem;
+      font-size: 1.3rem;
+      font-weight: 400;
+    `}
+
+  /* h1 */
+  ${(props) =>
+    props.as === "h1" &&
+    css`
+      font-size: 2rem;
       font-weight: 400;
     `}
 `;
 
 const Typography = (props) => (
-  <StyledParagraph variant={props.variant}>{props.children}</StyledParagraph>
+  <StyledParagraph as={props.as}>{props.children}</StyledParagraph>
 );
 
 export default Typography;

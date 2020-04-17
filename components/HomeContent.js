@@ -1,5 +1,5 @@
 import React from "react";
-import { ProfileImage, Typography } from ".";
+import { ProfileImage, Typography, AnchorLink } from ".";
 import styled from "@emotion/styled";
 
 const StyledWrapper = styled.div`
@@ -24,7 +24,16 @@ const HomeContent = () => (
       <ProfileImage />
     </StyledImage>
     <StyledText>
-      <Typography variant="p">Hi, i'm Stavros.</Typography>
+      <Typography as="h1">
+        Stavros Kampanakis <br /> Front End Developer
+      </Typography>
+      <Typography as="p">
+        Hi, i'm Stavros. Check my {""}
+        <AnchorLink
+          href="https://www.linkedin.com/in/stavroskampanakis"
+          text="linkedin"
+        />
+      </Typography>
     </StyledText>
   </StyledWrapper>
 );
