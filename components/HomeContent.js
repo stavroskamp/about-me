@@ -1,5 +1,5 @@
 import React from "react";
-import { ProfileImage, Typography, AnchorLink } from ".";
+import { ProfileImage, Typography, AnchorLink, ProfileIcons } from ".";
 import styled from "@emotion/styled";
 
 const StyledWrapper = styled.div`
@@ -10,6 +10,8 @@ const StyledWrapper = styled.div`
 const StyledImage = styled.div`
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
   flex-grow: 1;
 `;
 
@@ -22,6 +24,7 @@ const HomeContent = () => (
   <StyledWrapper>
     <StyledImage>
       <ProfileImage />
+      <ProfileIcons />
     </StyledImage>
     <StyledText>
       <Typography as="h1">
