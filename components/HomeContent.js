@@ -5,11 +5,11 @@ import styled from "@emotion/styled";
 const StyledWrapper = styled.div`
   display: flex;
   justify-content: center;
+  width: 100%;
 `;
 
 const StyledImage = styled.div`
   display: flex;
-  justify-content: center;
   flex-direction: column;
   align-items: center;
   flex-grow: 1;

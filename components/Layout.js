@@ -11,7 +11,9 @@ const StyledWrapper = styled.div`
 
 const StyledSection = styled.section`
   flex: 1;
+  display: flex;
   background-color: ${PRIMARY_BG_COLOR};
+  padding: 40px 0;
 `;
 
 const Layout = (props) => (

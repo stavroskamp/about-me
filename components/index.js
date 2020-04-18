@@ -6,3 +6,4 @@ export { default as HomeContent } from "./HomeContent";
 export { default as Typography } from "./Typography";
 export { default as AnchorLink } from "./AnchorLink";
 export { default as ProfileIcons } from "./ProfileIcons";
+export { default as Link } from "./Link";

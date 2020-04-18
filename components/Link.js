@@ -2,15 +2,11 @@ import React from "react";
 import styled from "@emotion/styled";
 import { ANCHOR_LINK_COLOR } from "../constants/colors";
 
-const StyledAnchor = styled.a`
+const StyledLink = styled.a`
   color: ${ANCHOR_LINK_COLOR};
   font-weight: inherit;
 `;
 
-const AnchorLink = (props) => (
-  <StyledAnchor href={props.href} target="_blank">
-    {props.text}
-  </StyledAnchor>
-);
+const Link = (props) => <StyledLink {...props}>{props.children}</StyledLink>;
 
-export default AnchorLink;
+export default Link;
