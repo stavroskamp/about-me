@@ -10,10 +10,11 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
+          <title>Stavros Kampanakis | Front End Developer</title>
           <link
-            href="https://fonts.googleapis.com/css?family=Lato"
+            href="https://fonts.googleapis.com/css?family=Rubik"
             rel="stylesheet"
-            key="google-font-lato"
+            key="google-font-rubik"
           />
         </Head>
         <body>

@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "@emotion/styled";
-import { PRIMARY_BG_COLOR } from "../constants/colors";
 import { Typography } from "../components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -16,7 +15,6 @@ const StyledFooter = styled.footer`
   justify-content: center;
   align-items: center;
   height: 50px;
-  background-color: ${PRIMARY_BG_COLOR};
 `;
 
 const StyledIcon = styled(FontAwesomeIcon)`
@@ -38,7 +36,7 @@ const StyledIcon = styled(FontAwesomeIcon)`
 const Footer = () => (
   <StyledFooter>
     <Typography as="p" variant="small">
-      Site ingredients: <StyledIcon title="code" type="code" icon={faCode} /> ,{" "}
+      Crafted with: <StyledIcon title="code" type="code" icon={faCode} /> ,{" "}
       <StyledIcon title="love" type="heart" icon={faHeart} /> and some{" "}
       <StyledIcon title="coffee" type="coffee" icon={faCoffee} />
     </Typography>

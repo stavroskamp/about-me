@@ -5,13 +5,14 @@ import { TYPOGRAPHY_COLOR } from "../constants/colors";
 
 const StyledParagraph = styled.div`
     color: ${TYPOGRAPHY_COLOR};
-    font-family: "Lato", Arial, sans-serif;
+    font-family: "Rubik", Arial, sans-serif;
+    line-height: 1.4;
 
   /* p */
   ${(props) =>
     props.as === "p" &&
     css`
-      font-size: 1.3rem;
+      font-size: 1.2rem;
       font-weight: 300;
     `}
 
@@ -21,7 +22,7 @@ const StyledParagraph = styled.div`
     props.variant === "small" &&
     css`
       font-size: 0.8rem;
-      font-weight: 200;
+      font-weight: 300;
       margin: 0.2em 0;
     `}
 
@@ -37,7 +38,7 @@ const StyledParagraph = styled.div`
   ${(props) =>
     props.as === "h2" &&
     css`
-      font-size: 1.5rem;
+      font-size: 1.4rem;
       font-weight: 300;
     `}
 `;

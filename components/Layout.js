@@ -7,12 +7,13 @@ const StyledWrapper = styled.div`
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+  padding: 0 220px;
+  background-color: ${PRIMARY_BG_COLOR};
 `;
 
 const StyledSection = styled.section`
   flex: 1;
   display: flex;
-  background-color: ${PRIMARY_BG_COLOR};
   padding: 40px 0;
 `;
 
