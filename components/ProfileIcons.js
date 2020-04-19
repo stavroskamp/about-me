@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import styled from "@emotion/styled";
-import { ANCHOR_LINK_COLOR } from "../constants/colors";
+import { ANCHOR_LINK_COLOR, TYPOGRAPHY_COLOR } from "../constants/colors";
 
 const StyledIconWrapper = styled.div`
   padding: 10px 0;
@@ -12,12 +12,12 @@ const StyledIconWrapper = styled.div`
 const StyledAnchor = styled.a`
   display: inline-flex;
   align-items: center;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   margin: 8px;
 `;
 
 const StyledIcon = styled(FontAwesomeIcon)`
-  color: white;
+  color: ${TYPOGRAPHY_COLOR};
   font-size: 1.5rem;
 
   &:hover {
