@@ -14,7 +14,7 @@ const StyledWrapper = styled.div`
 const StyledSection = styled.section`
   flex: 1;
   display: flex;
-  padding: 40px 0;
+  padding: 20px 0;
 `;
 
 const Layout = (props) => (

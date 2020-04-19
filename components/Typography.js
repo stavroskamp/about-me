@@ -12,7 +12,7 @@ const StyledParagraph = styled.div`
   ${(props) =>
     props.as === "p" &&
     css`
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       font-weight: 300;
     `}
 
@@ -30,7 +30,7 @@ const StyledParagraph = styled.div`
   ${(props) =>
     props.as === "h1" &&
     css`
-      font-size: 1.8rem;
+      font-size: 1.7rem;
       font-weight: 400;
     `}
 
@@ -38,17 +38,22 @@ const StyledParagraph = styled.div`
   ${(props) =>
     props.as === "h2" &&
     css`
-      font-size: 1.4rem;
+      font-size: 1.3rem;
       font-weight: 300;
     `}
+
+    ${(props) =>
+      props.variant === "nav" &&
+      css`
+        font-size: 1.3rem;
+        font-weight: 300;
+        margin: 0 10px;
+      `}
 `;
 
-const Typography = (props) => (
-  <StyledParagraph
-    as={props.as}
-    {...(props.variant && { variant: props.variant })}
-  >
-    {props.children}
+const Typography = ({ as, variant, children, ...other }) => (
+  <StyledParagraph as={as} {...(variant && { variant: variant })} {...other}>
+    {children}
   </StyledParagraph>
 );
 
