@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "@emotion/styled";
 import { css } from "@emotion/core";
-import { ANCHOR_LINK_COLOR, TYPOGRAPHY_COLOR } from "../constants/colors";
+import { ANCHOR_LINK_COLOR, TYPOGRAPHY_COLOR_LIGHT } from "../constants/colors";
 
 const StyledLink = styled.a`
   color: ${ANCHOR_LINK_COLOR};
@@ -10,7 +10,7 @@ const StyledLink = styled.a`
   ${(props) =>
     props.variant === "nav" &&
     css`
-      color: ${TYPOGRAPHY_COLOR};
+      color: ${TYPOGRAPHY_COLOR_LIGHT};
       text-decoration: none;
 
       &:hover {

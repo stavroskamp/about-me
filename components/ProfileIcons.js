@@ -7,7 +7,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import styled from "@emotion/styled";
-import { ANCHOR_LINK_COLOR, TYPOGRAPHY_COLOR } from "../constants/colors";
+import { ANCHOR_LINK_COLOR, TYPOGRAPHY_COLOR_LIGHT } from "../constants/colors";
 import { linkedin, github, instagram, email } from "../constants/urls";
 
 const StyledIconWrapper = styled.div`
@@ -22,7 +22,7 @@ const StyledAnchor = styled.a`
 `;
 
 const StyledIcon = styled(FontAwesomeIcon)`
-  color: ${TYPOGRAPHY_COLOR};
+  color: ${TYPOGRAPHY_COLOR_LIGHT};
   font-size: 1.5rem;
 
   &:hover {

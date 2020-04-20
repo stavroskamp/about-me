@@ -35,12 +35,12 @@ const StyledIcon = styled(FontAwesomeIcon)`
 
 const Footer = () => (
   <StyledFooter>
-    <Typography as="p" variant="small">
+    <Typography as="p" variant="small" theme="light">
       Crafted with: <StyledIcon title="code" type="code" icon={faCode} /> ,{" "}
       <StyledIcon title="love" type="heart" icon={faHeart} /> and some{" "}
       <StyledIcon title="coffee" type="coffee" icon={faCoffee} />
     </Typography>
-    <Typography as="p" variant="small">
+    <Typography as="p" variant="small" theme="light">
       Stavros Kampanakis <StyledIcon icon={faCopyright} />{" "}
       {new Date().getFullYear()}
     </Typography>

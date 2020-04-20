@@ -4,21 +4,41 @@ import styled from "@emotion/styled";
 import { linkedin, github, email } from "../constants/urls";
 
 const StyledWrapper = styled.div`
-  display: flex;
-  justify-content: center;
-  width: 100%;
+  @media (min-width: 1120px) {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
 `;
 
 const StyledImage = styled.div`
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  flex: 1 1 0px;
+  padding: 20px 0 0 0;
+
+  @media (min-width: 1120px) {
+    align-items: center;
+    justify-content: flex-start;
+    flex: 1 1 0px;
+  }
 `;
 
 const StyledText = styled.div`
-  flex: 3 1 0px;
-  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border: 1px solid #dadce0;
+  border-radius: 6px;
+  padding: 24px;
+  margin: 30px 0;
+
+  @media (min-width: 1120px) {
+    flex: 3 1 0px;
+    height: 340px;
+    margin: 0;
+  }
 `;
 
 const getExperienceInYears = () => new Date().getFullYear() - 2014;
@@ -36,7 +56,8 @@ const HomeContent = () => (
         great web experiences with a focus in the UI and UX.
         <br />
         In my over {getExperienceInYears()} years as a developer I used
-        different technologies for each project, but right now I feel
+        different technologies for each project, starting with jQuery back in
+        the day, then moving to Angular.js and for the past years I feel
         comfortable with React + Redux.
         <br />
         In my free time i like to mostly spend time with my family, take some

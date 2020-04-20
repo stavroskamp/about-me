@@ -8,6 +8,10 @@ const StyledNav = styled.nav`
   display: flex;
   align-items: center;
   justify-content: flex-end;
+
+  @media (max-width: 900px) {
+    justify-content: center;
+  }
 `;
 
 const NavBar = () => {
