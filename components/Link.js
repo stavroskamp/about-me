@@ -15,10 +15,6 @@ const StyledLink = styled.a`
 
       &:hover {
         color: ${ANCHOR_LINK_COLOR};
-
-        &:after {
-          transform: scaleX(1);
-        }
       }
 
       &:after {

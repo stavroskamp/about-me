@@ -19,7 +19,7 @@ export default function Custom404() {
   return (
     <StyledWrapper>
       <StyledImage src={confused} alt="404 image" />
-      <Typography as="h2">
+      <Typography as="h2" theme="light">
         There seems to be nothing here! <br /> Maybe go back to{" "}
         <Link href="/">Home</Link> ?
       </Typography>

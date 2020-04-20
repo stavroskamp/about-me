@@ -8,7 +8,7 @@ const StyledWrapper = styled.div`
   min-height: 100vh;
   flex-direction: column;
   padding: 0 10%;
-  background-color: ${PRIMARY_BG_COLOR};
+  background: linear-gradient(45deg, #4b6cb7 0%, #182848 100%);
 
   @media (max-width: 1120px) {
     padding: 0 7%;
@@ -19,6 +19,10 @@ const StyledSection = styled.section`
   flex: 1;
   display: flex;
   padding: 0 0 20px 0;
+
+  @media (min-width: 1120px) {
+    padding: 40px 0 20px 0;
+  }
 `;
 
 const Layout = (props) => (

@@ -2,6 +2,7 @@ import React from "react";
 import { ProfileImage, Typography, AnchorLink, ProfileIcons } from ".";
 import styled from "@emotion/styled";
 import { linkedin, github, email } from "../constants/urls";
+import { ANCHOR_LINK_COLOR } from "../constants/colors";
 
 const StyledWrapper = styled.div`
   @media (min-width: 1120px) {
@@ -29,10 +30,10 @@ const StyledText = styled.div`
   display: flex;
   flex-direction: column;
   background-color: #fff;
-  border: 1px solid #dadce0;
   border-radius: 6px;
   padding: 24px;
   margin: 30px 0;
+  border-top: 4px solid ${ANCHOR_LINK_COLOR};
 
   @media (min-width: 1120px) {
     flex: 3 1 0px;
@@ -60,8 +61,8 @@ const HomeContent = () => (
         the day, then moving to Angular.js and for the past years I feel
         comfortable with React + Redux.
         <br />
-        In my free time i like to mostly spend time with my family, take some
-        photos with my camera, read a book or play a game in my PS4.
+        In my free time i like to mostly spend time with my family, take photos
+        with my camera, read a book or play a game in the PS4.
       </Typography>
       <Typography as="p">
         Ok so you read my text, you learned some things about me and you are
