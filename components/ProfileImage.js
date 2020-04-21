@@ -7,6 +7,11 @@ const StyledImage = styled.img`
   height: 200px;
   width: 200px;
   border: 3px solid white;
+
+  @media (min-width: 1120px) {
+    height: 240px;
+    width: 240px;
+  }
 `;
 
 const ProfileImage = () => <StyledImage src={profile} alt="profile image" />;

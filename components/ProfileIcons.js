@@ -12,6 +12,10 @@ import { linkedin, github, instagram, email } from "../constants/urls";
 
 const StyledIconWrapper = styled.div`
   padding: 10px 0;
+  /* width of image plus the image ring */
+  width: 246px;
+  display: flex;
+  justify-content: center;
 `;
 
 const StyledAnchor = styled.a`

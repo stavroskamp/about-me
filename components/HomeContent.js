@@ -20,7 +20,7 @@ const StyledImage = styled.div`
   padding: 20px 0 0 0;
 
   @media (min-width: 1120px) {
-    align-items: center;
+    align-items: flex-start;
     justify-content: flex-start;
     flex: 1 1 0px;
   }
@@ -36,8 +36,8 @@ const StyledText = styled.div`
   border-top: 4px solid ${ANCHOR_LINK_COLOR};
 
   @media (min-width: 1120px) {
-    flex: 3 1 0px;
-    height: 340px;
+    flex: 2 1 0px;
+    height: 380px;
     margin: 0;
   }
 `;
@@ -53,21 +53,24 @@ const HomeContent = () => (
     <StyledText>
       <Typography as="h1">Hi, I'm Stavros!</Typography>
       <Typography as="p">
-        I'm a Front End Developer from Thessaloniki, Greece and I enjoy creating
-        great web experiences with a focus in the UI and UX.
-        <br />
-        In my over {getExperienceInYears()} years as a developer I used
-        different technologies for each project, starting with jQuery back in
-        the day, then moving to Angular.js and for the past years I feel
-        comfortable with React + Redux.
-        <br />
-        In my free time i like to mostly spend time with my family, take photos
-        with my camera, read a book or play a game in the PS4.
+        I'm a Front End Developer from Thessaloniki, Greece and I love to create
+        great web experiences.
       </Typography>
       <Typography as="p">
-        Ok so you read my text, you learned some things about me and you are
-        wondering now what? Well, this page is a work in progress, as the owner,
-        so in the meantime, feel free to send me an {""}
+        The way a website looks and feels are very important factors and can
+        determine the choice of a potential customer. But the creation of an
+        engaging website or app is a long process with trial and error and
+        sometimes quite difficult to nail down. <br />
+        This is where I can help. I enjoy creating sleek web interfaces by
+        utilizing the latest web technologies along with the best UI and UX
+        practices. I have more than {getExperienceInYears()} years of experience
+        developing and scaling different kinds of web applications and have been
+        a part of small and big teams.
+      </Typography>
+      <Typography as="p">
+        So you read my little intro and you are wondering now what? Well, this
+        page is a work in progress, with more things to come in the future. So
+        in the meantime, feel free to send me an {""}
         <AnchorLink
           href={`mailto:${email}?subject=Hello Stavros!`}
           text="e-mail"

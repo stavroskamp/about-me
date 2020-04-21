@@ -26,6 +26,7 @@ const StyledParagraph = styled.div`
       css`
         font-size: 1rem;
         font-weight: 300;
+        margin: 0.3rem 0;
       `}
 
     /* p small */
