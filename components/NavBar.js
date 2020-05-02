@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "@emotion/styled";
 import { Typography, Link } from "../components/";
-import { useRouter } from "next/router";
 
 const StyledNav = styled.nav`
   height: 70px;
@@ -14,27 +13,19 @@ const StyledNav = styled.nav`
   }
 `;
 
-const NavBar = () => {
-  const router = useRouter();
-
-  return (
-    <StyledNav>
-      <Typography variant="nav">
-        <Link showLine={router.pathname === "/"} variant="nav" href="/">
-          Home
-        </Link>
-      </Typography>
-      <Typography variant="nav">
-        <Link
-          showLine={router.pathname === "/projects"}
-          variant="nav"
-          href="/projects"
-        >
-          Projects
-        </Link>
-      </Typography>
-    </StyledNav>
-  );
-};
+const NavBar = () => (
+  <StyledNav>
+    <Typography variant="nav">
+      <Link variant="nav" href="#hi" replace>
+        Hi
+      </Link>
+    </Typography>
+    <Typography variant="nav">
+      <Link variant="nav" href="#timeline" replace>
+        Timeline
+      </Link>
+    </Typography>
+  </StyledNav>
+);
 
 export default NavBar;

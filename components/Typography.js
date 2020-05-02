@@ -55,6 +55,14 @@ const StyledParagraph = styled.div`
         font-weight: 300;
       `}
 
+    /* h3 */
+    ${(props) =>
+      props.as === "h3" &&
+      css`
+        font-size: 1.1rem;
+        font-weight: 600;
+      `}
+
     ${(props) =>
       props.variant === "nav" &&
       css`
