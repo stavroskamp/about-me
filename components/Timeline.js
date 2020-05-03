@@ -36,14 +36,14 @@ const timelineContent = [
         <Typography as="p">
           Fieldscale is a startup that tries to make the simulation of a
           capacitive touch sensor easier. Here I am the main Front End Developer
-          and my focus is:
+          and my focus is in:
         </Typography>
         <ul>
           <Typography as="li">
             Setting up the development process for the projects
           </Typography>
           <Typography as="li">
-            Creation and maintenance of the interface web components
+            Creation, styling and maintaining of the web interface
           </Typography>
           <Typography as="li">Creation of prototypes</Typography>
           <Typography as="li">
@@ -105,12 +105,12 @@ const timelineContent = [
     jobDescription: (
       <React.Fragment>
         <Typography as="p">
-          In DataTeam I was the only Front End Developer responsible for the
+          In DataTeam I was the only Front End Developer assigned for the
           creation of the user interface of an ECM web application. Part of my
           responsibilities was:
         </Typography>
         <ul>
-          <Typography as="li">Setting up the build process</Typography>
+          <Typography as="li">Setting up the development process</Typography>
           <Typography as="li">
             Creating and styling the web interface
           </Typography>

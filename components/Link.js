@@ -10,7 +10,7 @@ const StyledLink = styled.a`
   ${(props) =>
     props.variant === "nav" &&
     css`
-      color: ${TYPOGRAPHY_COLOR_LIGHT};
+      color: ${ANCHOR_LINK_COLOR};
       text-decoration: none;
 
       &:hover {
