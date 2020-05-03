@@ -1,40 +1,39 @@
 import React from "react";
 import styled from "@emotion/styled";
 import { Typography, Link } from "../components/";
-import { useRouter } from "next/router";
+import { StyledLayoutMixin } from "../styles/mixins";
 
 const StyledNav = styled.nav`
-  height: 70px;
+  position: sticky;
+  top: 0;
+  height: 50px;
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  z-index: 100;
+  padding-top: 3px;
+  background-color: #2f3f5f;
+  opacity: 90%;
+  ${StyledLayoutMixin};
 
   @media (max-width: 900px) {
     justify-content: center;
   }
 `;
 
-const NavBar = () => {
-  const router = useRouter();
-
-  return (
-    <StyledNav>
-      <Typography variant="nav">
-        <Link showLine={router.pathname === "/"} variant="nav" href="/">
-          Home
-        </Link>
-      </Typography>
-      <Typography variant="nav">
-        <Link
-          showLine={router.pathname === "/projects"}
-          variant="nav"
-          href="/projects"
-        >
-          Projects
-        </Link>
-      </Typography>
-    </StyledNav>
-  );
-};
+const NavBar = () => (
+  <StyledNav>
+    <Typography variant="nav">
+      <Link variant="nav" href="#hi" replace>
+        Hi
+      </Link>
+    </Typography>
+    <Typography variant="nav">
+      <Link variant="nav" href="#timeline" replace>
+        Timeline
+      </Link>
+    </Typography>
+  </StyledNav>
+);
 
 export default NavBar;

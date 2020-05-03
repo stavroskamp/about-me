@@ -15,6 +15,9 @@ const StyledLink = styled.a`
 
       &:hover {
         color: ${ANCHOR_LINK_COLOR};
+        &:after {
+          transform: scaleX(1);
+        }
       }
 
       &:after {
@@ -26,14 +29,6 @@ const StyledLink = styled.a`
         transition: transform 350ms ease;
         transform: scaleX(0);
         background-color: ${ANCHOR_LINK_COLOR};
-      }
-    `}
-
-  ${(props) =>
-    props.showLine &&
-    css`
-      &:after {
-        transform: scaleX(1);
       }
     `}
 `;

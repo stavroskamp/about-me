@@ -1,3 +1,4 @@
+export { default as Intro } from "./Intro";
 export { default as Layout } from "./Layout";
 export { default as Footer } from "./Footer";
 export { default as NavBar } from "./NavBar";
@@ -8,3 +9,7 @@ export { default as AnchorLink } from "./AnchorLink";
 export { default as ProfileIcons } from "./ProfileIcons";
 export { default as Link } from "./Link";
 export { default as ComingSoon } from "./ComingSoon";
+export { default as TimelineBox } from "./TimelineBox";
+export { default as Timeline } from "./Timeline";
+export { default as Paper } from "./Paper";
+export { default as Tag } from "./Tag";
