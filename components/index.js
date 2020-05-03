@@ -12,3 +12,4 @@ export { default as ComingSoon } from "./ComingSoon";
 export { default as TimelineBox } from "./TimelineBox";
 export { default as Timeline } from "./Timeline";
 export { default as Paper } from "./Paper";
+export { default as Tag } from "./Tag";

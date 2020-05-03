@@ -29,6 +29,14 @@ const StyledParagraph = styled.div`
         margin: 0.3rem 0;
       `}
 
+      ${(props) =>
+        props.as === "li" &&
+        css`
+          font-size: 1rem;
+          font-weight: 300;
+          margin: 0.3rem 0;
+        `}
+
     /* p small */
     ${(props) =>
       props.as === "p" &&
@@ -61,6 +69,51 @@ const StyledParagraph = styled.div`
       css`
         font-size: 1.1rem;
         font-weight: 600;
+        margin: 4px 0;
+      `}
+
+          /* h3 */
+    ${(props) =>
+      props.as === "h4" &&
+      css`
+        font-size: 1rem;
+        font-weight: 200;
+        margin: 3px 0;
+        font-style: italic;
+      `}
+
+    /* h3 */
+    ${(props) =>
+      props.as === "p" &&
+      props.variant === "subtext" &&
+      css`
+        font-size: 0.8rem;
+        font-weight: 200;
+        margin: 4px 0;
+        color: gray;
+      `}
+
+    /* tag */
+    ${(props) =>
+      props.as === "p" &&
+      props.variant === "tag" &&
+      css`
+        font-size: 0.9rem;
+        font-weight: 200;
+        margin: 4px 0;
+        color: #182848;
+      `}
+
+    /* tag header */
+    ${(props) =>
+      props.as === "p" &&
+      props.variant === "tagheader" &&
+      css`
+        font-size: 0.9rem;
+        font-weight: 600;
+        text-decoration: underline;
+        margin: 4px 0;
+        color: #7496d8;
       `}
 
     ${(props) =>
