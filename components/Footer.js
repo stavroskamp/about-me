@@ -8,6 +8,7 @@ import {
   faCode,
   faCopyright,
 } from "@fortawesome/free-solid-svg-icons";
+import { StyledLayoutMixin } from "../styles/mixins";
 
 const StyledFooter = styled.footer`
   display: flex;
@@ -15,6 +16,9 @@ const StyledFooter = styled.footer`
   justify-content: center;
   align-items: center;
   height: 50px;
+  background-color: #2f3f5f;
+
+  ${StyledLayoutMixin};
 `;
 
 const StyledIcon = styled(FontAwesomeIcon)`

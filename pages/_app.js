@@ -1,7 +1,7 @@
 import React from "react";
 import App from "next/app";
 import { Layout } from "../components";
-import "./styles.css";
+import "../styles/styles.css";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import Head from "next/head";
 

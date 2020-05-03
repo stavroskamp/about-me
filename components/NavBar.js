@@ -1,12 +1,20 @@
 import React from "react";
 import styled from "@emotion/styled";
 import { Typography, Link } from "../components/";
+import { StyledLayoutMixin } from "../styles/mixins";
 
 const StyledNav = styled.nav`
-  height: 70px;
+  position: sticky;
+  top: 0;
+  height: 50px;
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  z-index: 100;
+  padding-top: 3px;
+  background-color: #2f3f5f;
+  opacity: 90%;
+  ${StyledLayoutMixin};
 
   @media (max-width: 900px) {
     justify-content: center;

@@ -8,13 +8,26 @@ import {
 } from "../components";
 import styled from "@emotion/styled";
 import { linkedin, github, email } from "../constants/urls";
+import { StyledLayoutMixin } from "../styles/mixins";
+import bg from "../public/profile-bg.jpg";
 
 const StyledWrapper = styled.div`
+  background-color: #5872a7;
+  padding: 70px 0;
+  background-image: url(${bg});
+  background-size: cover;
+  background-position: top;
+
   @media (min-width: 1120px) {
     display: flex;
     justify-content: center;
-    width: 100%;
   }
+
+  @media (min-width: 850px) {
+    background-position: bottom;
+  }
+
+  ${StyledLayoutMixin};
 `;
 
 const StyledImage = styled.div`
@@ -37,7 +50,6 @@ const StyledPaper = styled((props) => <Paper {...props} />)`
 
   @media (min-width: 1120px) {
     flex: 2 1 0px;
-    height: 380px;
     margin: 0;
   }
 `;
@@ -45,7 +57,7 @@ const StyledPaper = styled((props) => <Paper {...props} />)`
 const getExperienceInYears = () => new Date().getFullYear() - 2014;
 
 const Intro = () => (
-  <StyledWrapper id="Intro">
+  <StyledWrapper id="hi">
     <StyledImage>
       <ProfileImage />
       <ProfileIcons />

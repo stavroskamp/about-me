@@ -1,16 +1,20 @@
 import React from "react";
 import { TimelineBox, Typography } from "../components";
 import styled from "@emotion/styled";
+import { StyledLayoutMixin } from "../styles/mixins";
 
 const TimelineWrapper = styled.div`
   display: flex;
   flex: 1;
-  margin: 100px 0;
   flex-direction: column;
+  padding: 14px 0;
+  background-color: #2f3f5f;
   background-image: linear-gradient(#fff, #fff);
   background-size: 4px 100%;
   background-repeat: no-repeat;
   background-position: center center;
+  background-origin: content-box;
+  ${StyledLayoutMixin};
 `;
 
 const StyledCircle = styled.div`
