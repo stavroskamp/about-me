@@ -1,9 +1,9 @@
 import React from "react";
-import { TimelineBox, Typography } from "../components";
+import {TimelineBox, Typography} from "../components";
 import styled from "@emotion/styled";
-import { StyledLayoutMixin } from "../styles/mixins";
+import {StyledLayoutMixin} from "../styles/mixins";
 
-const TimelineWrapper = styled.div`
+const TimelineWrapper = styled.div `
   display: flex;
   flex: 1;
   flex-direction: column;
@@ -17,7 +17,7 @@ const TimelineWrapper = styled.div`
   ${StyledLayoutMixin};
 `;
 
-const StyledCircle = styled.div`
+const StyledCircle = styled.div `
   display: flex;
   align-self: center;
   height: 18px;
@@ -34,24 +34,25 @@ const timelineContent = [
     jobDescription: (
       <React.Fragment>
         <Typography as="p">
-          Fieldscale is a startup that tries to make the simulation of a
-          capacitive touch sensor easier. Here I am the main Front End Developer
-          and my focus is in:
+          Fieldscale is a startup that tries to make the simulation of a capacitive touch
+          sensor easier. Here I am the main Front End Developer and my focus is in:
         </Typography>
         <ul>
           <Typography as="li">
-            Setting up the development process for the projects
+            Setting up the development process for the project
           </Typography>
           <Typography as="li">
             Creation, styling and maintaining of the web interface
+          </Typography>
+          <Typography as="li">
+            Suggesting UI and UX solutions
           </Typography>
           <Typography as="li">Creation of prototypes</Typography>
           <Typography as="li">
             Helping other developers with the front end technology stack
           </Typography>
           <Typography as="li">
-            Working closely with the product owner, back end developers and the
-            QA
+            Working closely with the product owner, back end developers and the QA
           </Typography>
         </ul>
       </React.Fragment>
@@ -62,19 +63,17 @@ const timelineContent = [
       "Redux",
       "Styled Components",
       "Material UI",
-      "Three.js",
-    ],
-  },
-  {
+      "Three.js"
+    ]
+  }, {
     company: "KissMyButton.gr",
     jobTitle: "Front End Developer",
     jobDuration: "March 2017 - May 2018",
     jobDescription: (
       <React.Fragment>
         <Typography as="p">
-          While being in KissMyButton I was part of a team of Front End
-          Developers working remotely for a customers NLU web application. My
-          responsibilities were:
+          While being in KissMyButton I was part of a team of Front End Developers working
+          remotely for a customers NLU web application. My responsibilities were:
         </Typography>
         <ul>
           <Typography as="li">
@@ -95,19 +94,17 @@ const timelineContent = [
       "Redux",
       "Angular.js",
       "Socket.io",
-      "Sass",
-    ],
-  },
-  {
+      "Sass"
+    ]
+  }, {
     company: "DataTeam Solutions",
     jobTitle: "Front End Developer",
     jobDuration: "March 2016 - March 2017",
     jobDescription: (
       <React.Fragment>
         <Typography as="p">
-          In DataTeam I was the only Front End Developer assigned for the
-          creation of the user interface of an ECM web application. Part of my
-          responsibilities was:
+          In DataTeam I was the only Front End Developer assigned for the creation of the
+          user interface of an ECM web application. Part of my responsibilities was:
         </Typography>
         <ul>
           <Typography as="li">Setting up the development process</Typography>
@@ -129,23 +126,21 @@ const timelineContent = [
       "jQuery",
       "Bootstrap",
       "Kendo UI",
-      "git",
-    ],
-  },
-  {
+      "git"
+    ]
+  }, {
     company: "Rhombus Software Solutions",
     jobTitle: "Front End Developer",
     jobDuration: "June 2015 - February 2016",
     jobDescription: (
       <React.Fragment>
         <Typography as="p">
-          I joined this startup part-time as a Front End Developer to help
-          create a web application for dentists. I was responsible for:
+          I joined this startup part-time as a Front End Developer to help create a web
+          application for dentists. I was responsible for:
         </Typography>
         <ul>
           <Typography as="li">
-            Setting up, creating and styling the front end of autonomous parts
-            of the app
+            Setting up, creating and styling the front end of autonomous parts of the app
           </Typography>
           <Typography as="li">Creating the UI and UX of these apps</Typography>
           <Typography as="li">Creating the company's webpage</Typography>
@@ -159,18 +154,17 @@ const timelineContent = [
       "jQuery",
       "Bootstrap",
       "Fabric.js",
-      "git",
-    ],
-  },
-  {
+      "git"
+    ]
+  }, {
     company: "Tsakoumis Consultants & Enginners",
     jobTitle: "GIS Analyst / GIS Developer",
     jobDuration: "December 2012 - September 2014",
     jobDescription: (
       <React.Fragment>
         <Typography as="p">
-          I joined the company for my internship and later continued working on
-          some projects. In my time there Ι:
+          I joined the company for my internship and later continued working on some
+          projects. In my time there Ι:
         </Typography>
         <ul>
           <Typography as="li">
@@ -191,18 +185,17 @@ const timelineContent = [
       "Leaflet.js",
       "Python",
       "ArcMap",
-      "QGIS",
-    ],
-  },
-  {
+      "QGIS"
+    ]
+  }, {
     company: "Positive Engineering CO",
     jobTitle: "Sales and Marketing Assistant",
     jobDuration: "May 2012 - December 2012",
     jobDescription: (
       <React.Fragment>
         <Typography as="p">
-          I was a member of a small team that was selling photovoltaic
-          equipment. I was responsible for:
+          I was a member of a small team that was selling photovoltaic equipment. I was
+          responsible for:
         </Typography>
         <ul>
           <Typography as="li">
@@ -211,30 +204,27 @@ const timelineContent = [
           <Typography as="li">Creating of newsletters</Typography>
           <Typography as="li">Creation of offers</Typography>
           <Typography as="li">
-            Communicating with logistics companies for the transportation of the
-            equipment
+            Communicating with logistics companies for the transportation of the equipment
           </Typography>
         </ul>
       </React.Fragment>
-    ),
-  },
+    )
+  }
 ];
 
 const Timeline = () => (
   <TimelineWrapper id="timeline">
-    <StyledCircle />
-    {timelineContent.map((t, index) => (
-      <TimelineBox
-        key={index}
-        company={t.company}
-        jobTitle={t.jobTitle}
-        jobDescription={t.jobDescription}
-        jobDuration={t.jobDuration}
-        placement={index % 2 === 0 ? "left" : "right"}
-        technologies={t.technologies}
-      />
-    ))}
-    <StyledCircle />
+    <StyledCircle/> {timelineContent.map((t, index) => (<TimelineBox
+      key={index}
+      company={t.company}
+      jobTitle={t.jobTitle}
+      jobDescription={t.jobDescription}
+      jobDuration={t.jobDuration}
+      placement={index % 2 === 0
+      ? "left"
+      : "right"}
+      technologies={t.technologies}/>))}
+    <StyledCircle/>
   </TimelineWrapper>
 );
 
