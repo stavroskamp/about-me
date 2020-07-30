@@ -23,10 +23,14 @@ class MyApp extends App {
         <Head>
           <title>Stavros Kampanakis | Front End Developer</title>
           <link
-            href="https://fonts.googleapis.com/css?family=Rubik"
+            href="https://fonts.googleapis.com/css?family=Rubik&display=swap"
             rel="stylesheet"
             key="google-font-rubik"
           />
+          <meta
+            name="Description"
+            content="Hi, I'm Stavros Kampanakis and this is my website. Here you will find information about me, my previous works and projects"
+          ></meta>
         </Head>
         <Layout>
           <Component {...pageProps} />

@@ -8,7 +8,7 @@ const StyledAnchor = styled.a`
 `;
 
 const AnchorLink = (props) => (
-  <StyledAnchor href={props.href} target="_blank">
+  <StyledAnchor href={props.href} target="_blank" rel="noopener">
     {props.text}
   </StyledAnchor>
 );

@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "@emotion/styled";
-import profile from "../public/profile.jpg";
+import profile from "../public/profile-240w.jpg";
 
 const StyledImage = styled.img`
   border-radius: 50%;

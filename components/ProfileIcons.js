@@ -57,11 +57,20 @@ const ProfileIcons = () => {
 
   return (
     <StyledIconWrapper>
-      <StyledAnchor href={`mailto:${email}?subject=Hello Stavros!`}>
+      <StyledAnchor
+        href={`mailto:${email}?subject=Hello Stavros!`}
+        aria-label={"email"}
+      >
         <StyledIcon icon={faEnvelope} />
       </StyledAnchor>
       {icons.map((i) => (
-        <StyledAnchor key={i.id} href={i.link} target="_blank">
+        <StyledAnchor
+          key={i.id}
+          href={i.link}
+          aria-label={i.link}
+          target="_blank"
+          rel="noopener"
+        >
           <StyledIcon icon={i.icon} />
         </StyledAnchor>
       ))}
