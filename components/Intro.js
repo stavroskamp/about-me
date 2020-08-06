@@ -18,11 +18,6 @@ const StyledWrapper = styled.div`
   background-size: cover;
   background-position: top;
 
-  @media (min-width: 1120px) {
-    display: flex;
-    justify-content: center;
-  }
-
   @media (min-width: 850px) {
     background-position: bottom;
   }
@@ -38,9 +33,10 @@ const StyledImage = styled.div`
   padding: 20px 0 0 0;
 
   @media (min-width: 1120px) {
-    align-items: flex-start;
+    align-items: center;
     justify-content: flex-start;
     flex: 1 1 0px;
+    margin: 0 0 30px 0;
   }
 `;
 

@@ -3,11 +3,12 @@ import { TimelineBox, Typography } from "../components";
 import styled from "@emotion/styled";
 import { StyledLayoutMixin } from "../styles/mixins";
 
-const TimelineWrapper = styled.div`
+const StyledTimelineWrapper = styled.div`
   display: flex;
   flex: 1;
   flex-direction: column;
-  padding: 14px 0;
+  align-items: center;
+  padding: 40px 0;
   background-color: #2f3f5f;
   background-image: linear-gradient(#fff, #fff);
   background-size: 4px 100%;
@@ -20,13 +21,24 @@ const TimelineWrapper = styled.div`
 const StyledCircle = styled.div`
   display: flex;
   align-self: center;
-  height: 18px;
-  width: 18px;
+  height: 1.2rem;
+  width: 1.2rem;
   background-color: #fff;
   border-radius: 50%;
 `;
 
 const timelineContent = [
+  {
+    company: "Saphetor",
+    jobTitle: "Front End Developer",
+    jobDuration: "August 2000 - Now",
+    jobDescription: (
+      <Typography as="p">
+        Just joined Saphetor to lend a hand in the front end team.
+      </Typography>
+    ),
+    technologies: ["JavaScript ES6", "React", "Redux"],
+  },
   {
     company: "Fieldscale",
     jobTitle: "Front End Developer",
@@ -222,8 +234,8 @@ const timelineContent = [
 ];
 
 const Timeline = () => (
-  <TimelineWrapper id="timeline">
-    <StyledCircle />{" "}
+  <StyledTimelineWrapper id="timeline">
+    <StyledCircle />
     {timelineContent.map((t, index) => (
       <TimelineBox
         key={index}
@@ -236,7 +248,7 @@ const Timeline = () => (
       />
     ))}
     <StyledCircle />
-  </TimelineWrapper>
+  </StyledTimelineWrapper>
 );
 
 export default Timeline;

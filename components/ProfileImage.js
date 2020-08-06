@@ -7,6 +7,7 @@ const StyledImage = styled.img`
   height: 200px;
   width: 200px;
   border: 3px solid white;
+  align-items: center;
 
   @media (min-width: 1120px) {
     height: 240px;
