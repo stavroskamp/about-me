@@ -1,6 +1,7 @@
 import { Typography, Link } from "../components";
 import confused from "../public/confused 404.gif";
 import styled from "@emotion/styled";
+import { StyledBgGradientMixin } from "../styles/mixins";
 
 const StyledWrapper = styled.div`
   display: flex;
@@ -9,6 +10,7 @@ const StyledWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   text-align: center;
+  ${StyledBgGradientMixin};
 `;
 
 const StyledImage = styled.img`

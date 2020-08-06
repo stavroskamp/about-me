@@ -1,5 +1,4 @@
 import React from "react";
-import { NavBar, Footer } from "../components";
 import styled from "@emotion/styled";
 
 const StyledWrapper = styled.div`
@@ -15,9 +14,7 @@ const StyledSection = styled.section`
 
 const Layout = (props) => (
   <StyledWrapper>
-    <NavBar />
     <StyledSection>{props.children}</StyledSection>
-    <Footer />
   </StyledWrapper>
 );
 

@@ -16,8 +16,6 @@ const StyledFooter = styled.footer`
   justify-content: center;
   align-items: center;
   height: 50px;
-  background-color: #2f3f5f;
-
   ${StyledLayoutMixin};
 `;
 

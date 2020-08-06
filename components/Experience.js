@@ -1,33 +1,23 @@
 import React from "react";
-import { TimelineBox, Typography } from "../components";
+import { ExperienceBox, Typography, Footer } from ".";
 import styled from "@emotion/styled";
-import { StyledLayoutMixin } from "../styles/mixins";
+import { StyledLayoutMixin, StyledBgGradientMixin } from "../styles/mixins";
 
-const StyledTimelineWrapper = styled.div`
+const StyledExperienceWrapper = styled.div`
   display: flex;
   flex: 1;
   flex-direction: column;
   align-items: center;
-  padding: 40px 0;
-  background-color: #2f3f5f;
-  background-image: linear-gradient(#fff, #fff);
-  background-size: 4px 100%;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-origin: content-box;
+  padding: 40px 40px 0 40px;
+  ${StyledBgGradientMixin};
   ${StyledLayoutMixin};
 `;
 
-const StyledCircle = styled.div`
-  display: flex;
-  align-self: center;
-  height: 1.2rem;
-  width: 1.2rem;
-  background-color: #fff;
-  border-radius: 50%;
+const StyledExperienceHeader = styled(Typography)`
+  color: white;
 `;
 
-const timelineContent = [
+const experienceContent = [
   {
     company: "Saphetor",
     jobTitle: "Front End Developer",
@@ -233,11 +223,13 @@ const timelineContent = [
   },
 ];
 
-const Timeline = () => (
-  <StyledTimelineWrapper id="timeline">
-    <StyledCircle />
-    {timelineContent.map((t, index) => (
-      <TimelineBox
+const Experience = () => (
+  <StyledExperienceWrapper id="experience">
+    <StyledExperienceHeader as="h1">
+      &#9670; Experience &#9670;
+    </StyledExperienceHeader>
+    {experienceContent.map((t, index) => (
+      <ExperienceBox
         key={index}
         company={t.company}
         jobTitle={t.jobTitle}
@@ -247,8 +239,8 @@ const Timeline = () => (
         technologies={t.technologies}
       />
     ))}
-    <StyledCircle />
-  </StyledTimelineWrapper>
+    <Footer />
+  </StyledExperienceWrapper>
 );
 
-export default Timeline;
+export default Experience;

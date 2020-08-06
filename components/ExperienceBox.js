@@ -32,7 +32,7 @@ const StyledJobInfo = styled.div`
   padding: 0 0 20px 0;
 `;
 
-const TimelineBox = (props) => (
+const ExperienceBox = (props) => (
   <React.Fragment>
     <StyledPaper topLine={true} placement={props.placement}>
       <StyledJobInfo>
@@ -59,7 +59,7 @@ const TimelineBox = (props) => (
   </React.Fragment>
 );
 
-TimelineBox.propTypes = {
+ExperienceBox.propTypes = {
   company: PropTypes.string,
   jobTitle: PropTypes.string,
   jobDescription: PropTypes.node,
@@ -67,4 +67,4 @@ TimelineBox.propTypes = {
   placement: PropTypes.oneOf(["right", "left"]),
 };
 
-export default TimelineBox;
+export default ExperienceBox;

@@ -1,5 +1,5 @@
 import React from "react";
-import { Intro, Timeline } from ".";
+import { Intro, Experience, NavBar } from ".";
 import styled from "@emotion/styled";
 
 const StyledWrapper = styled.div`
@@ -9,8 +9,9 @@ const StyledWrapper = styled.div`
 
 const HomeContent = () => (
   <StyledWrapper>
+    <NavBar />
     <Intro />
-    <Timeline />
+    <Experience />
   </StyledWrapper>
 );
 

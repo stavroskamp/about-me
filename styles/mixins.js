@@ -23,4 +23,11 @@ const StyledLayoutMixin = () => css`
   }
 `;
 
-export { StyledLayoutMixin };
+const StyledBgGradientMixin = () => css`
+  background: #2f3f5f;
+  background: -webkit-radial-gradient(center, #5761b3, #2f3f5f);
+  background: -moz-radial-gradient(center, #5761b3, #2f3f5f);
+  background: radial-gradient(ellipse at center, #5761b3, #2f3f5f);
+`;
+
+export { StyledLayoutMixin, StyledBgGradientMixin };

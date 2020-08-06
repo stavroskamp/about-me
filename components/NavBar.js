@@ -29,8 +29,8 @@ const NavBar = () => (
       </Link>
     </Typography>
     <Typography variant="nav">
-      <Link variant="nav" href="#timeline" replace>
-        Timeline
+      <Link variant="nav" href="#experience" replace>
+        Experience
       </Link>
     </Typography>
   </StyledNav>
