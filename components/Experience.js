@@ -24,10 +24,10 @@ const experienceContent = [
     jobDuration: "August 2020 - Now",
     jobDescription: (
       <Typography as="p">
-        Saphetor is creating tools for large-scale NGS data analysis. Being a
-        part of the Front End team the great challenge is how to display all
-        these data in a way that a biologist or a doctor can use them. If you
-        are interested in genomics you can take a look in{" "}
+        I am part of the Front End team in Saphetor and we are creating tools for large-scale NGS data analysis.
+        The great challenge we are facing is finding ways
+        to display a big volume of data so that we help a genomics expert or a doctor
+        in making descisions. If you are interested in genomics you can take a look in{" "}
         <Link href="https://varsome.com/">varsome</Link>.
       </Typography>
     ),

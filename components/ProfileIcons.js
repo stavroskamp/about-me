@@ -5,10 +5,9 @@ import {
   faGithub,
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import styled from "@emotion/styled";
 import { ANCHOR_LINK_COLOR, TYPOGRAPHY_COLOR_LIGHT } from "../constants/colors";
-import { linkedin, github, instagram, email } from "../constants/urls";
+import { linkedin, github, instagram } from "../constants/urls";
 
 const StyledIconWrapper = styled.div`
   padding: 10px 0;
@@ -57,12 +56,6 @@ const ProfileIcons = () => {
 
   return (
     <StyledIconWrapper>
-      <StyledAnchor
-        href={`mailto:${email}?subject=Hello Stavros!`}
-        aria-label={"email"}
-      >
-        <StyledIcon icon={faEnvelope} />
-      </StyledAnchor>
       {icons.map((i) => (
         <StyledAnchor
           key={i.id}

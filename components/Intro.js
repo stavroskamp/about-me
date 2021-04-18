@@ -7,7 +7,7 @@ import {
   Paper,
 } from "../components";
 import styled from "@emotion/styled";
-import { linkedin, github, email } from "../constants/urls";
+import { linkedin, github, instagram } from "../constants/urls";
 import { StyledLayoutMixin } from "../styles/mixins";
 import bg from "../public/profile-bg.jpg";
 
@@ -76,16 +76,9 @@ const Intro = () => (
         a part of small and big teams.
       </Typography>
       <Typography as="p">
-        So you read my little intro and you are wondering now what? Well, this
-        page is a work in progress, with more things to come in the future. So
-        in the meantime, feel free to send me an {""}
-        <AnchorLink
-          href={`mailto:${email}?subject=Hello Stavros!`}
-          text="e-mail"
-        />
-        , check my {""}
-        <AnchorLink href={linkedin} text="LinkedIn"></AnchorLink>, {""} or my{" "}
-        <AnchorLink href={github} text="GitHub"></AnchorLink>.
+        So you read my little intro and you are wondering now what? Feel free to send me a message in{" "}
+        <AnchorLink href={linkedin} text="LinkedIn"/>, you can check for my projects in{" "}
+        <AnchorLink href={github} text="GitHub"/>, or you can take a look in the photos that i like to take in{" "}<AnchorLink href={instagram} text="Instagram"/>.
       </Typography>
     </StyledPaper>
   </StyledWrapper>
