@@ -5,9 +5,16 @@ import {
   faGithub,
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
+import { faImages } from "@fortawesome/free-solid-svg-icons";
 import styled from "@emotion/styled";
 import { ANCHOR_LINK_COLOR, TYPOGRAPHY_COLOR_LIGHT } from "../constants/colors";
-import { linkedin, github, instagram } from "../constants/urls";
+import {
+  linkedin,
+  github,
+  instagram,
+  photographyBlog,
+} from "../constants/urls";
+import Tooltip from "react-simple-tooltip";
 
 const StyledIconWrapper = styled.div`
   padding: 10px 0;
@@ -41,31 +48,43 @@ const ProfileIcons = () => {
       id: 1,
       link: linkedin,
       icon: faLinkedin,
+      text: "LinkedIn",
     },
     {
       id: 2,
       link: github,
       icon: faGithub,
+      text: "Github",
     },
     {
       id: 3,
       link: instagram,
       icon: faInstagram,
+      text: "Instagram",
     },
+    { id: 4, link: photographyBlog, icon: faImages, text: "Photography Blog" },
   ];
 
   return (
     <StyledIconWrapper>
       {icons.map((i) => (
-        <StyledAnchor
+        <Tooltip
           key={i.id}
-          href={i.link}
-          aria-label={i.link}
-          target="_blank"
-          rel="noopener"
+          content={i.text}
+          placement="bottom"
+          fontFamily="Rubik"
+          radius={3}
         >
-          <StyledIcon icon={i.icon} />
-        </StyledAnchor>
+          <StyledAnchor
+            key={i.id}
+            href={i.link}
+            aria-label={i.link}
+            target="_blank"
+            rel="noopener"
+          >
+            <StyledIcon icon={i.icon} />
+          </StyledAnchor>
+        </Tooltip>
       ))}
     </StyledIconWrapper>
   );
