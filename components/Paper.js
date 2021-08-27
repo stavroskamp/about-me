@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "@emotion/styled";
-import { css } from "@emotion/core";
+import { css } from "@emotion/react";
 import { ANCHOR_LINK_COLOR } from "../constants/colors";
 import PropTypes from "prop-types";
 

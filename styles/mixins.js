@@ -1,6 +1,6 @@
-import {css} from "@emotion/core";
+import { css } from "@emotion/react";
 
-const StyledLayoutMixin = () => css `
+const StyledLayoutMixin = () => css`
   @media (min-width: 300px) {
     padding-right: 5%;
     padding-left: 5%;
@@ -27,11 +27,11 @@ const StyledLayoutMixin = () => css `
   }
 `;
 
-const StyledBgGradientMixin = () => css `
+const StyledBgGradientMixin = () => css`
   background: #2f3f5f;
   background: -webkit-radial-gradient(center, #5761b3, #2f3f5f);
   background: -moz-radial-gradient(center, #5761b3, #2f3f5f);
   background: radial-gradient(ellipse at center, #5761b3, #2f3f5f);
 `;
 
-export {StyledLayoutMixin, StyledBgGradientMixin};
+export { StyledLayoutMixin, StyledBgGradientMixin };
