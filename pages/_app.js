@@ -4,6 +4,7 @@ import { Layout } from "../components";
 import "../styles/styles.css";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import Head from "next/head";
+import profile from "../public/profile-240w.jpg";
 
 class MyApp extends App {
   static async getStaticProps({ Component, ctx }) {
@@ -49,6 +50,7 @@ class MyApp extends App {
             name="Description"
             content="Hi, I'm Stavros Kampanakis and this is my website. Here you will find information about me, my previous works and projects"
           ></meta>
+          <meta property="og:image" content={profile} />
         </Head>
         <Layout>
           <Component {...pageProps} />
