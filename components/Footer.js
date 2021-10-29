@@ -4,7 +4,6 @@ import { Typography } from "../components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faHeart,
-  faCoffee,
   faCode,
   faCopyright,
 } from "@fortawesome/free-solid-svg-icons";
@@ -38,9 +37,8 @@ const StyledIcon = styled(FontAwesomeIcon)`
 const Footer = () => (
   <StyledFooter>
     <Typography as="p" variant="small" theme="light">
-      Crafted with: <StyledIcon title="code" type="code" icon={faCode} /> ,{" "}
-      <StyledIcon title="love" type="heart" icon={faHeart} /> and some{" "}
-      <StyledIcon title="coffee" type="coffee" icon={faCoffee} />
+      Crafted with <StyledIcon title="code" type="code" icon={faCode} /> and{" "}
+      <StyledIcon title="love" type="heart" icon={faHeart} />
     </Typography>
     <Typography as="p" variant="small" theme="light">
       Stavros Kampanakis <StyledIcon icon={faCopyright} />{" "}

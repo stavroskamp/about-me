@@ -29,7 +29,7 @@ const StyledTagWrapper = styled.div`
 const StyledJobInfo = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 0 0 20px 0;
+  padding: 0 0 1.2rem 0;
 `;
 
 const ExperienceBox = (props) => (

@@ -17,7 +17,6 @@ import { StyledLayoutMixin } from "../styles/mixins";
 import bg from "../public/profile-bg.jpg";
 
 const StyledWrapper = styled.div`
-  background-color: #5872a7;
   padding: 70px 0;
   background-image: url(${bg});
   background-size: cover;
@@ -70,23 +69,22 @@ const Intro = () => (
         great web experiences.
       </Typography>
       <Typography as="p">
-        The way a website looks and feels are very important factors and can
-        determine the choice of a potential customer. But the creation of an
-        engaging website or app is a long process with trial and error and
-        sometimes quite difficult to nail down. <br />
-        This is where I can help. I enjoy creating sleek web interfaces by
-        utilizing the latest web technologies along with the best UI and UX
-        practices. I have more than {getExperienceInYears()} years of experience
-        developing and scaling different kinds of web applications and have been
-        a part of small and big teams.
+        I have more than {getExperienceInYears()} years of experience developing
+        and scaling different kinds of web applications. I have been a part of
+        small and big teams and worked through the years on different business
+        domains from simulation software to a genomics application. The way a
+        web application looks and feels are important factors to gain or keep a
+        customer. This is the part I can help with. I enjoy creating sleek web
+        interfaces by utilizing the latest web technologies. I am very
+        interested in the UI and UX aspect, I like to tweak the design of an
+        application and I also enjoy creating mockups.
       </Typography>
       <Typography as="p">
-        So you read my little intro and you are wondering now what? Feel free to
-        send me a message in <AnchorLink href={linkedin} text="LinkedIn" />, you
-        can check for my projects in <AnchorLink href={github} text="GitHub" />,
-        or you can read my{" "}
-        <AnchorLink href={photographyBlog} text="photography blog" /> or take a
-        look at the photos i upload on{" "}
+        Feel free to contact me on{" "}
+        <AnchorLink href={linkedin} text="LinkedIn" />, check my projects in{" "}
+        <AnchorLink href={github} text="GitHub" />, you can also read my{" "}
+        <AnchorLink href={photographyBlog} text="photography blog" /> or even
+        take a look at my photos on{" "}
         <AnchorLink href={instagram} text="Instagram" />.
       </Typography>
     </StyledPaper>

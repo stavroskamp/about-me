@@ -23,15 +23,38 @@ const experienceContent = [
     jobTitle: "Front End Developer",
     jobDuration: "August 2020 - Now",
     jobDescription: (
-      <Typography as="p">
-        I am part of the Front End team in Saphetor and we are creating tools for large-scale NGS data analysis.
-        The great challenge we are facing is finding ways
-        to display a big volume of data so that we help a genomics expert or a doctor
-        in making descisions. If you are interested in genomics you can take a look in{" "}
-        <Link href="https://varsome.com/">varsome</Link>.
-      </Typography>
+      <React.Fragment>
+        <Typography as="p">
+          I am part of the Front End team in Saphetor where we are creating
+          tools for large-scale NGS data analysis. Part of my responsibilities
+          are:
+        </Typography>
+        <ul>
+          <Typography as="li">
+            Taking full ownership and implementing key front end features
+          </Typography>
+          <Typography as="li">
+            Creating reusable and testable components
+          </Typography>
+          <Typography as="li">
+            Creating mockup designs and prototypes
+          </Typography>
+          <Typography as="li">Writing unit tests</Typography>
+          <Typography as="li">
+            Cooperating closely with managers and other team members on fetures
+          </Typography>
+        </ul>
+      </React.Fragment>
     ),
-    technologies: ["JavaScript ES6", "React", "Redux"],
+    technologies: [
+      "React",
+      "React Hooks",
+      "Redux",
+      "Sass",
+      "Tailwind",
+      "Jest",
+      "React Testing Library",
+    ],
   },
   {
     company: "Fieldscale",
@@ -51,8 +74,7 @@ const experienceContent = [
           <Typography as="li">
             Creation, styling and maintaining of the web interface
           </Typography>
-          <Typography as="li">Suggesting UI and UX solutions</Typography>
-          <Typography as="li">Creation of prototypes</Typography>
+          <Typography as="li">Creation of prototypes and mockups</Typography>
           <Typography as="li">
             Helping other developers with the front end technology stack
           </Typography>
@@ -64,12 +86,12 @@ const experienceContent = [
       </React.Fragment>
     ),
     technologies: [
-      "JavaScript ES6",
       "React",
       "Redux",
       "Styled Components",
       "Material UI",
       "Three.js",
+      "Jest",
     ],
   },
   {
@@ -96,14 +118,7 @@ const experienceContent = [
         </ul>
       </React.Fragment>
     ),
-    technologies: [
-      "JavaScript ES6",
-      "React",
-      "Redux",
-      "Angular.js",
-      "Socket.io",
-      "Sass",
-    ],
+    technologies: ["React", "Redux", "Angular.js", "Socket.io", "Sass"],
   },
   {
     company: "DataTeam Solutions",
