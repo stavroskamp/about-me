@@ -26,7 +26,7 @@ const experienceContent = [
       <React.Fragment>
         <Typography as="p">
           I am part of the Front End team in Saphetor where we are creating
-          tools for large-scale NGS data analysis. Part of my responsibilities
+          tools for large-scale NGS data analysis. Some of my responsibilities
           are:
         </Typography>
         <ul>
@@ -41,7 +41,7 @@ const experienceContent = [
           </Typography>
           <Typography as="li">Writing unit tests</Typography>
           <Typography as="li">
-            Cooperating closely with managers and other team members on fetures
+            Cooperating closely with managers and other team members on features
           </Typography>
         </ul>
       </React.Fragment>
