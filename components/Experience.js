@@ -21,13 +21,13 @@ const experienceContent = [
   {
     company: "Saphetor",
     jobTitle: "Front End Developer",
-    jobDuration: "August 2020 - Now",
+    jobDuration: "August 2020 - December 2021",
     jobDescription: (
       <React.Fragment>
         <Typography as="p">
-          I am part of the Front End team in Saphetor where we are creating
+          I was part of the Front End team in Saphetor, a company that creates
           tools for large-scale NGS data analysis. Some of my responsibilities
-          are:
+          were:
         </Typography>
         <ul>
           <Typography as="li">
