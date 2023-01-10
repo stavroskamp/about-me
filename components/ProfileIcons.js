@@ -5,15 +5,9 @@ import {
   faGithub,
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
-import { faImages } from "@fortawesome/free-solid-svg-icons";
 import styled from "@emotion/styled";
 import { ANCHOR_LINK_COLOR, TYPOGRAPHY_COLOR_LIGHT } from "../constants/colors";
-import {
-  linkedin,
-  github,
-  instagram,
-  photographyBlog,
-} from "../constants/urls";
+import { linkedin, github, instagram } from "../constants/urls";
 import Tooltip from "react-simple-tooltip";
 
 const StyledIconWrapper = styled.div`
@@ -33,7 +27,7 @@ const StyledAnchor = styled.a`
 
 const StyledIcon = styled(FontAwesomeIcon)`
   color: ${TYPOGRAPHY_COLOR_LIGHT};
-  font-size: 1.5rem;
+  font-size: 1.7rem;
 
   &:hover {
     cursor: pointer;
@@ -62,7 +56,6 @@ const ProfileIcons = () => {
       icon: faInstagram,
       text: "Instagram",
     },
-    { id: 4, link: photographyBlog, icon: faImages, text: "Photography Blog" },
   ];
 
   return (

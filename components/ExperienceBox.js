@@ -4,21 +4,8 @@ import { Typography, Paper, Tag } from "../components";
 import PropTypes from "prop-types";
 
 const StyledPaper = styled((props) => <Paper {...props} />)`
+  display: flex;
   flex-direction: column;
-  position: relative;
-  width: calc(100% - 48px);
-  :after,
-  :before {
-    top: 50%;
-    border: solid transparent;
-    content: " ";
-    height: 0;
-    width: 0;
-    position: absolute;
-    pointer-events: none;
-    border-width: 16px;
-    margin-top: -16px;
-  }
 `;
 
 const StyledTagWrapper = styled.div`
@@ -33,30 +20,28 @@ const StyledJobInfo = styled.div`
 `;
 
 const ExperienceBox = (props) => (
-  <React.Fragment>
-    <StyledPaper topLine={true} placement={props.placement}>
-      <StyledJobInfo>
-        <Typography as="h3">{props.jobTitle}</Typography>
-        <Typography as="h4">{props.company}</Typography>
-        <Typography as="p" variant="subtext">
-          {props.jobDuration}
+  <StyledPaper topLine={true} placement={props.placement}>
+    <StyledJobInfo>
+      <Typography as="h3">{props.jobTitle}</Typography>
+      <Typography as="h4">{props.company}</Typography>
+      <Typography as="p" variant="subtext">
+        {props.jobDuration}
+      </Typography>
+    </StyledJobInfo>
+    {props.jobDescription}
+    {props.technologies && (
+      <React.Fragment>
+        <Typography as="p" variant="tagheader">
+          Technologies:
         </Typography>
-      </StyledJobInfo>
-      {props.jobDescription}
-      {props.technologies && (
-        <React.Fragment>
-          <Typography as="p" variant="tagheader">
-            Technologies:
-          </Typography>
-          <StyledTagWrapper>
-            {props.technologies.map((t, index) => (
-              <Tag key={index} text={t} />
-            ))}
-          </StyledTagWrapper>
-        </React.Fragment>
-      )}
-    </StyledPaper>
-  </React.Fragment>
+        <StyledTagWrapper>
+          {props.technologies.map((t, index) => (
+            <Tag key={index} text={t} />
+          ))}
+        </StyledTagWrapper>
+      </React.Fragment>
+    )}
+  </StyledPaper>
 );
 
 ExperienceBox.propTypes = {

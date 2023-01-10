@@ -1,16 +1,19 @@
 import React from "react";
-import { ExperienceBox, Typography, Footer, Link } from ".";
+import { ExperienceBox, Typography, Footer } from ".";
 import styled from "@emotion/styled";
-import { StyledLayoutMixin, StyledBgGradientMixin } from "../styles/mixins";
+import { StyledBgGradientMixin, StyledLayoutMixin } from "../styles/mixins";
 
 const StyledExperienceWrapper = styled.div`
   display: flex;
   flex: 1;
   flex-direction: column;
   align-items: center;
-  padding: 40px 40px 0 40px;
+  padding: 32px 20px 0 20px;
   ${StyledBgGradientMixin};
-  ${StyledLayoutMixin};
+`;
+
+const StyledWrapper = styled.div`
+  ${StyledLayoutMixin}
 `;
 
 const StyledExperienceHeader = styled(Typography)`
@@ -18,6 +21,16 @@ const StyledExperienceHeader = styled(Typography)`
 `;
 
 const experienceContent = [
+  {
+    company: "Sitecore",
+    jobTitle: "Front End Engineer",
+    jobDuration: "January 2021 - Now",
+    jobDescription: (
+      <React.Fragment>
+        <Typography as="p">Part of Sitecore's Portal team.</Typography>
+      </React.Fragment>
+    ),
+  },
   {
     company: "Saphetor",
     jobTitle: "Front End Developer",
@@ -244,20 +257,20 @@ const experienceContent = [
 
 const Experience = () => (
   <StyledExperienceWrapper id="experience">
-    <StyledExperienceHeader as="h1">
-      &#9670; Experience &#9670;
-    </StyledExperienceHeader>
-    {experienceContent.map((t, index) => (
-      <ExperienceBox
-        key={index}
-        company={t.company}
-        jobTitle={t.jobTitle}
-        jobDescription={t.jobDescription}
-        jobDuration={t.jobDuration}
-        placement={index % 2 === 0 ? "left" : "right"}
-        technologies={t.technologies}
-      />
-    ))}
+    <StyledExperienceHeader as="h1">Experience</StyledExperienceHeader>
+    <StyledWrapper>
+      {experienceContent.map((t, index) => (
+        <ExperienceBox
+          key={index}
+          company={t.company}
+          jobTitle={t.jobTitle}
+          jobDescription={t.jobDescription}
+          jobDuration={t.jobDuration}
+          placement={index % 2 === 0 ? "left" : "right"}
+          technologies={t.technologies}
+        />
+      ))}
+    </StyledWrapper>
     <Footer />
   </StyledExperienceWrapper>
 );

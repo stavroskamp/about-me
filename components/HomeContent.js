@@ -1,8 +1,8 @@
 import React from "react";
-import {Intro, Experience, NavBar} from ".";
+import { Intro, Experience, NavBar } from ".";
 import styled from "@emotion/styled";
 
-const StyledWrapper = styled.div `
+const StyledWrapper = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -10,9 +10,9 @@ const StyledWrapper = styled.div `
 
 const HomeContent = () => (
   <StyledWrapper>
-    <NavBar/>
-    <Intro/>
-    <Experience/>
+    <NavBar />
+    <Intro />
+    <Experience />
   </StyledWrapper>
 );
 
