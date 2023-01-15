@@ -5,6 +5,7 @@ import "../styles/styles.css";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import Head from "next/head";
 import profile from "../public/profile-240w.jpg";
+import Script from "next/script";
 
 class MyApp extends App {
   static async getStaticProps({ Component, ctx }) {
@@ -41,7 +42,7 @@ class MyApp extends App {
           />
           <link rel="manifest" href="/site.webmanifest" />
           <title>Stavros Kampanakis | Creating great web experiences</title>
-          <link
+          <Script
             href="https://fonts.googleapis.com/css?family=Rubik&display=swap"
             rel="stylesheet"
             key="google-font-rubik"

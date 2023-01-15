@@ -27,9 +27,17 @@ const experienceContent = [
     jobDuration: "January 2021 - Now",
     jobDescription: (
       <React.Fragment>
-        <Typography as="p">Part of Sitecore's Portal team.</Typography>
+        <Typography as="p">Part of Sitecore's Portal UI team.</Typography>
       </React.Fragment>
     ),
+    technologies: [
+      "React",
+      "React Hooks",
+      "Chakra UI",
+      "Typescript",
+      "Jest",
+      "React Testing Library",
+    ],
   },
   {
     company: "Saphetor",

@@ -10,19 +10,21 @@ import styled from "@emotion/styled";
 import { linkedin, github, instagram } from "../constants/urls";
 import bg from "../public/profile-bg.jpg";
 import { StyledLayoutMixin } from "../styles/mixins";
+import Image from "next/image";
 
 const StyledWrapper = styled.div`
   display: flex;
+  position: relative;
   flex-direction: column;
   align-items: center;
   padding: 32px 20px;
-  background-image: url(${bg});
-  background-size: cover;
-  background-position: top;
+`;
 
-  @media (min-width: 850px) {
-    background-position: bottom;
-  }
+const StyledBgWrapper = styled.div`
+  display: flex;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
 `;
 
 const StyledImage = styled.div`
@@ -45,6 +47,16 @@ const getExperienceInYears = () => new Date().getFullYear() - 2014;
 
 const Intro = () => (
   <StyledWrapper id="hi">
+    <StyledBgWrapper>
+      <Image
+        alt="background image"
+        src={bg}
+        layout="fill"
+        objectFit="cover"
+        objectPosition="center"
+        quality={100}
+      />
+    </StyledBgWrapper>
     <StyledImage>
       <ProfileImage />
       <ProfileIcons />
