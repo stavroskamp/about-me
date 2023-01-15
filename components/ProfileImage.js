@@ -1,15 +1,17 @@
 import React from "react";
-import styled from "@emotion/styled";
 import profile from "../public/profile-240w.jpg";
+import Image from "next/image";
 
-const StyledImage = styled.img`
-  border-radius: 50%;
-  height: 230px;
-  width: 230px;
-  border: 3px solid white;
-  align-items: center;
-`;
-
-const ProfileImage = () => <StyledImage src={profile} alt="profile image" />;
+const ProfileImage = () => (
+  <div
+    style={{
+      border: "3px solid white",
+      borderRadius: "50%",
+      overflow: "hidden",
+    }}
+  >
+    <Image src={profile} width={"230px"} height={"230px"} alt="profile image" />
+  </div>
+);
 
 export default ProfileImage;
