@@ -3,7 +3,8 @@ const withImages = require("next-images");
 module.exports = {
   images: {
     disableStaticImages: true,
-    unoptimized: true,
+    loader: "akamai",
+    path: "",
   },
   ...withImages(),
 };
