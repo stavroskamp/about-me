@@ -64,8 +64,7 @@ const Intro = () => (
           application. The way a web application looks and feels are important
           factors to gain or keep a customer. This is the part I can help with.
           I enjoy creating sleek web interfaces by utilizing the latest web
-          technologies. I am very interested in the UI and UX aspect, I like to
-          tweak the design of an application and I also enjoy creating mockups.
+          technologies and I am also very interested in the UI and UX of an app.
         </Typography>
         <Typography as="p">
           Feel free to contact me on{" "}
