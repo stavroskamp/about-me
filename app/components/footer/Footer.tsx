@@ -2,7 +2,13 @@ import { contactData } from "@/app/data";
 import { contactInfoTypes } from "@/app/types";
 
 const iconLink = (contact: contactInfoTypes) => (
-  <a className="hover:cursor-pointer dark:text-pink-400">{contact.icon}</a>
+  <a
+    className="hover:cursor-pointer dark:text-pink-400"
+    href={contact.url}
+    target="_blank"
+  >
+    {contact.icon}
+  </a>
 );
 
 export default function Footer() {
