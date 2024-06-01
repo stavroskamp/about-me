@@ -8,7 +8,7 @@ import { skillData, contactData } from "./data";
 export default function Home() {
   const getLink = ({ url, name }: contactInfoTypes) => (
     <a
-      className="hover:cursor-pointer underline decoration-pink-400"
+      className="hover:cursor-pointer underline dark:text-pink-400 dark:decoration-pink-400"
       href={url}
       target="_blank"
     >

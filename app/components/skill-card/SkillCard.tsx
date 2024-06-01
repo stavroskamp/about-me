@@ -22,7 +22,7 @@ export default function SkillCard({
         {tags.map((tag) => (
           <span
             key={tag}
-            className="border-pink-400 border dark:text-pink-400 text-xs font-semibold me-2 px-2.5 py-0.5 rounded"
+            className="border-pink-400 border dark:text-pink-400 text-xs font-sans me-2 px-2.5 py-0.5 rounded"
           >
             {tag}
           </span>
