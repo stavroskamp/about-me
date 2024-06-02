@@ -2,8 +2,6 @@
 
 This is my personal website.
 
-I made it with React, Next.js and Emotion.js
+I made it with React, Next.js and Tailwind.css
 
 Visit the website [here](https://www.stavroskampanakis.com/)
-
-![alt text](./public/app_screenshot.png)
