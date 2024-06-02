@@ -10,7 +10,7 @@ export default function SkillCard({
   tags: string[];
 }) {
   return (
-    <div className="rounded-lg drop-shadow-lg p-5 overflow-hidden dark:bg-dark-card">
+    <div className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-100 duration-200 rounded-lg drop-shadow-lg p-5 overflow-hidden dark:bg-dark-card dark:hover:brightness-125">
       <div className="flex flex-row align-middle pb-2">
         <div className="flex align-middle mr-4">{icon}</div>
         <div className="flex flex-col">

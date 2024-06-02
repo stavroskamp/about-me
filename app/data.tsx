@@ -62,9 +62,9 @@ export const skillData: {
   },
   {
     icon: <Figma size={iconsSize} />,
-    title: "Prototyping / Wireframes",
+    title: "Design",
     type: "Design skills",
-    tags: ["Figma"],
+    tags: ["Figma", "Prototyping", "Wireframing"],
   },
   {
     icon: <SquareKanban size={iconsSize} />,

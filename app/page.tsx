@@ -23,7 +23,7 @@ export default function Home() {
         <div className="flex flex-col container max-w-screen-xl gap-20">
           <div className="flex flex-col lg:flex-row">
             <div className="flex lg:basis-1/3 justify-center">
-              <div className="flex w-72 h-72 relative">
+              <div className="flex lg:min-w-64 lg:h-64 w-56 h-56 relative">
                 <Image
                   className="rounded-full w-full h-full border-solid border-4 border-pink-700 dark:border-pink-400"
                   layout="fill"
