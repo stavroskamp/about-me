@@ -6,6 +6,7 @@ const iconLink = (contact: contactInfoTypes) => (
     className="hover:cursor-pointer dark:text-pink-400"
     href={contact.url}
     target="_blank"
+    aria-label={`link for my ${contact.name} page`}
   >
     {contact.icon}
   </a>
