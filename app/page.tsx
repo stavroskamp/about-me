@@ -33,7 +33,7 @@ export default function Home() {
                 />
               </div>
             </div>
-            <div className="flex flex-col px-10 mt-12 justify-center items-center lg:mt-0 lg:items-start lg:basis-2/3">
+            <div className="flex flex-col lg:px-10 mt-12 justify-center items-center lg:mt-0 lg:items-start lg:basis-2/3">
               <h1 className="font-sans text-7xl pb-10 dark:neutral-200">
                 👋 Hi, I&apos;m Stavros!
               </h1>
