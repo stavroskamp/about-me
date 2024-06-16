@@ -47,10 +47,8 @@ export default function Home() {
             </div>
           </div>
           <div>
-            <h2
-              id="about-me"
-              className="font-sans text-2xl pb-3 dark:neutral-200"
-            >
+            <div className="relative bottom-20" id="about-me" />
+            <h2 className="font-sans text-2xl pb-3 dark:neutral-200">
               About me
             </h2>
             <p className="text-xl dark:text-slate-400">
@@ -68,12 +66,8 @@ export default function Home() {
             </p>
           </div>
           <div>
-            <h2
-              id="skills"
-              className="font-sans text-2xl pb-3 dark:neutral-200"
-            >
-              Skills
-            </h2>
+            <div className="relative bottom-20" id="skills" />
+            <h2 className="font-sans text-2xl pb-3 dark:neutral-200">Skills</h2>
             <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-4">
               {skillData.map((skill) => (
                 <SkillCard
@@ -87,10 +81,8 @@ export default function Home() {
             </div>
           </div>
           <div>
-            <h2
-              id="contact"
-              className="font-sans text-2xl pb-3 dark:neutral-200"
-            >
+            <div className="relative bottom-20" id="contact" />
+            <h2 className="font-sans text-2xl pb-3 dark:neutral-200">
               Contact
             </h2>
             <p className="text-xl dark:text-slate-400">
