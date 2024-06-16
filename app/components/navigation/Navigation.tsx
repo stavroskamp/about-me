@@ -15,11 +15,11 @@ export default function Navigation() {
   ];
 
   const baseNavStyles =
-    "rounded-3xl mx-2 my-2 px-2 py-1 flex basis-1/3 items-center justify-center whitespace-nowrap hover:underline underline-offset-4 hover:dark:decoration-pink-400";
+    "rounded-3xl lg:mx-2 my-2 px-2 py-1 flex basis-1/3 items-center justify-center whitespace-nowrap hover:underline underline-offset-4 hover:dark:decoration-pink-400";
 
   return (
     <header className="flex sticky top-0 z-50 justify-center bg-transparent">
-      <div className="flex max-w-screen-xl  justify-center flex-row rounded-3xl backdrop-blur-md bg-white/30 px-6 mt-6">
+      <div className="flex max-w-screen-xl justify-center flex-row rounded-3xl backdrop-blur-md bg-white/30 px-6 mt-6">
         {links.map((item) => (
           <a
             className={`${baseNavStyles}`}
