@@ -68,9 +68,9 @@ export const skillData: {
   },
   {
     icon: <SquareKanban size={iconsSize} />,
-    title: "Agile",
+    title: "Agile Principles",
     type: "Soft skills",
-    tags: ["Story creation", "Kanban", "Backlog refinements"],
+    tags: ["Story creation", "Kanban", "Sprint planing", "Retrospectives"],
   },
 ];
 

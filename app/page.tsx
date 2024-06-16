@@ -34,10 +34,10 @@ export default function Home() {
               </div>
             </div>
             <div className="flex flex-col lg:px-10 mt-12 justify-center items-center lg:mt-0 lg:items-start lg:basis-2/3">
-              <h1 className="font-sans text-7xl pb-10 dark:neutral-200">
+              <h1 className="font-sans lg:text-7xl text-6xl pb-10 dark:neutral-200">
                 👋 Hi, I&apos;m Stavros!
               </h1>
-              <h1 className="font-sans text-3xl dark:neutral-200 max-w-[40rem]">
+              <h1 className="font-sans lg:text-3xl text-2xl dark:neutral-200 max-w-[40rem]">
                 I&apos;m a{" "}
                 <span className="hover:animate-pulse text-pink-700 dark:text-pink-400">
                   Front-End developer / UX Designer
