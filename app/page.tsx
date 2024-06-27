@@ -40,7 +40,7 @@ export default function Home() {
               <h1 className="font-sans lg:text-3xl text-2xl dark:neutral-200 max-w-[40rem]">
                 I&apos;m a{" "}
                 <span className="hover:animate-pulse text-pink-700 dark:text-pink-400">
-                  Front-End developer / UX Designer
+                  Front-End developer / UX Engineer
                 </span>{" "}
                 working remotely from Thessaloniki, Greece.
               </h1>
