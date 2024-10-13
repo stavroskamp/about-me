@@ -28,7 +28,7 @@ export default function Home() {
                   className="rounded-full w-full h-full border-solid border-4 border-pink-700 dark:border-pink-400"
                   layout="fill"
                   objectFit="cover"
-                  src={"/profile.jpg"}
+                  src={"/profile.webp"}
                   alt={"photo of me!"}
                 />
               </div>
