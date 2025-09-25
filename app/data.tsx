@@ -1,15 +1,15 @@
 import {
   Braces,
-  Code,
   PencilRuler,
-  FlaskConical,
   Palette,
   Figma,
   SquareKanban,
-  Mail,
   Linkedin,
   Github,
   Instagram,
+  UserRoundCheck,
+  ListChecks,
+  PackageSearch,
 } from "lucide-react";
 import { ReactElement } from "react";
 import { contactInfoTypes } from "./types";
@@ -23,24 +23,43 @@ export const skillData: {
   tags: string[];
 }[] = [
   {
+    icon: <PackageSearch size={iconsSize} />,
+    title: "Product Development",
+    type: "Product skills",
+    tags: [
+      "Product vision",
+      "Roadmap",
+      "Market research",
+      "Product market fit",
+    ],
+  },
+  {
+    icon: <ListChecks size={iconsSize} />,
+    title: "Product Delivery",
+    type: "Product skills",
+    tags: [
+      "User stories",
+      "Release planning",
+      "Sprint plannning",
+      "Agile methodologies",
+    ],
+  },
+  {
+    icon: <UserRoundCheck size={iconsSize} />,
+    title: "Cross-functional leadership",
+    type: "Product skills",
+    tags: [
+      "Stakeholder management",
+      "Product requirement documents",
+      "Sprint plannning",
+      "Workshop and demos facilitation",
+    ],
+  },
+  {
     icon: <Braces size={iconsSize} />,
     title: "Javascript",
     type: "Technical skills",
-    tags: ["Typescript", "ES6+"],
-  },
-  {
-    icon: <Code size={iconsSize} />,
-    title: "Front-End frameworks",
-    type: "Technical skills",
-    tags: [
-      "React 18",
-      "Next.js",
-      "Redux",
-      "GraphQL",
-      "React Router",
-      "React Query",
-      "Formik",
-    ],
+    tags: ["React", "Next.js", "GraphQL", "Typescript", "ES6+", "Jest"],
   },
   {
     icon: <PencilRuler size={iconsSize} />,
@@ -49,28 +68,18 @@ export const skillData: {
     tags: ["Chakra UI", "Tailwind CSS", "Styled components", "SASS"],
   },
   {
-    icon: <FlaskConical size={iconsSize} />,
-    title: "Testing libraries",
-    type: "Technical skills",
-    tags: ["Jest", "React testing library"],
-  },
-  {
     icon: <Palette size={iconsSize} />,
     title: "UI / UX",
     type: "Design skills",
-    tags: ["Responsive design", "Storybook", "UX principles", "Accesibility"],
-  },
-  {
-    icon: <Figma size={iconsSize} />,
-    title: "Design",
-    type: "Design skills",
-    tags: ["Figma", "Prototyping", "Wireframing"],
-  },
-  {
-    icon: <SquareKanban size={iconsSize} />,
-    title: "Agile Principles",
-    type: "Soft skills",
-    tags: ["Story creation", "Kanban", "Sprint planing", "Retrospectives"],
+    tags: [
+      "Responsive design",
+      "Storybook",
+      "UX principles",
+      "Accesibility",
+      "Figma",
+      "Prototyping",
+      "Wireframing",
+    ],
   },
 ];
 

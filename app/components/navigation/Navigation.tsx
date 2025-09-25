@@ -30,16 +30,6 @@ export default function Navigation() {
             {item.name}
           </a>
         ))}
-        <span className="flex items-center justify-center mx-1">|</span>
-        <a
-          className={`${baseNavStyles}`}
-          href="/Stavros Kampanakis - Senior Front end Developer.pdf"
-          target="_blank"
-          rel="noopener noreferrer"
-          download
-        >
-          Get my CV
-        </a>
       </div>
     </header>
   );

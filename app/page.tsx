@@ -38,11 +38,10 @@ export default function Home() {
                 👋 Hi, I&apos;m Stavros!
               </h1>
               <h1 className="font-sans lg:text-3xl text-2xl dark:neutral-200 max-w-[40rem]">
-                I&apos;m a{" "}
                 <span className="hover:animate-pulse text-pink-700 dark:text-pink-400">
-                  Front-End developer / UX Engineer
-                </span>{" "}
-                working remotely from Thessaloniki, Greece.
+                  A Technical Product Manager with 10+ yrs in Frontend
+                  Development & UX
+                </span>
               </h1>
             </div>
           </div>
@@ -52,17 +51,15 @@ export default function Home() {
               About me
             </h2>
             <p className="text-xl dark:text-slate-400">
-              I am a passionate Front-End developer with a keen eye for UX
-              design. I specialize in creating visually stunning and highly
-              functional web interfaces that offer an exceptional user
-              experience. Operating remotely from the beautiful city of
-              Thessaloniki, Greece, I bring a unique blend of creativity and
-              technical expertise to every project, ensuring that your digital
-              presence not only looks great but also performs flawlessly. I have
-              over {new Date().getFullYear() - 2013} years of experience across
-              diverse and complex domains, including geographical information
-              systems, natural language processing, touch sensor simulations,
-              DNA sequencing, and more.
+              I bring over a decade of experience in frontend development, with
+              a strong foundation in building scalable, user-focused
+              applications. Alongside my technical background, I have deep
+              experience in UX, ensuring that products are not only functional
+              but intuitive and engaging. Today, I combine these skills in my
+              role as a Product Manager, shaping and driving SaaS marketplace
+              solutions that empower developers, partners, and customers alike.
+              My focus is on bridging technology, design, and strategy to
+              deliver impactful digital products.
             </p>
           </div>
           <div>
@@ -86,12 +83,15 @@ export default function Home() {
               Contact
             </h2>
             <p className="text-xl dark:text-slate-400">
-              Are you looking for a skilled frontend developer who also excels
-              in UX design? If so, feel free to reach out to me on{" "}
-              {getLink(contactData.linkedin)}, explore my projects on{" "}
-              {getLink(contactData.github)}, or check out my photos on{" "}
-              {getLink(contactData.instagram)}. Let&apos;s connect and discuss
-              how I can help bring your vision to life!
+              Are you looking for a technical leader who can translate complex
+              requirements into successful products? With a background spanning
+              software development, product strategy, and UX collaboration, I
+              specialize in aligning engineering and business goals to deliver
+              impactful solutions. Feel free to connect with me on{" "}
+              {getLink(contactData.linkedin)}, explore my past work on{" "}
+              {getLink(contactData.github)}, or check out my creative side on{" "}
+              {getLink(contactData.instagram)}. Let’s connect and discuss how I
+              can help drive your product vision forward.
             </p>
           </div>
         </div>
