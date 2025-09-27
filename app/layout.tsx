@@ -8,6 +8,8 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Stavros Kampanakis - Technical Product Manager",
+  description:
+    "Technical Product Manager with 10+ years in Frontend Development & UX, blending technology, design, and business to build impactful products",
 };
 
 export default function RootLayout({

@@ -3,7 +3,7 @@ import { contactInfoTypes } from "@/app/types";
 
 const iconLink = (contact: contactInfoTypes) => (
   <a
-    className="hover:cursor-pointer dark:text-pink-400"
+    className="hover:cursor-pointer dark:text-pink-400 hover:animate-pulse"
     href={contact.url}
     target="_blank"
     aria-label={`link for my ${contact.name} page`}

@@ -40,7 +40,7 @@ export const skillData: {
     tags: [
       "User stories",
       "Release planning",
-      "Sprint plannning",
+      "Sprint planning",
       "Agile methodologies",
     ],
   },
@@ -51,8 +51,7 @@ export const skillData: {
     tags: [
       "Stakeholder management",
       "Product requirement documents",
-      "Sprint plannning",
-      "Workshop and demos facilitation",
+      "Workshops",
     ],
   },
   {

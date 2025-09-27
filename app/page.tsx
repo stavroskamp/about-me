@@ -8,7 +8,7 @@ import { skillData, contactData } from "./data";
 export default function Home() {
   const getLink = ({ url, name }: contactInfoTypes) => (
     <a
-      className="hover:cursor-pointer underline dark:text-pink-400 dark:decoration-pink-400"
+      className="hover:cursor-pointer underline dark:text-pink-400 dark:decoration-pink-400 hover:animate-pulse"
       href={url}
       target="_blank"
     >
@@ -33,12 +33,12 @@ export default function Home() {
                 />
               </div>
             </div>
-            <div className="flex flex-col lg:px-10 mt-12 justify-center items-center lg:mt-0 lg:items-start lg:basis-2/3">
-              <h1 className="font-sans lg:text-7xl text-6xl pb-10 dark:neutral-200">
+            <div className="flex flex-col lg:px-10 mt-12 justify-center items-center lg:mt-0 lg:items-start lg:basis-2/3 text-center lg:text-left">
+              <h1 className="font-sans lg:text-6xl text-5xl pb-10 dark:neutral-200">
                 👋 Hi, I&apos;m Stavros!
               </h1>
               <h1 className="font-sans lg:text-3xl text-2xl dark:neutral-200 max-w-[40rem]">
-                <span className="hover:animate-pulse text-pink-700 dark:text-pink-400">
+                <span className="hover:animate-pulse text-pink-700 dark:text-pink-400 ">
                   A Technical Product Manager with 10+ yrs in Frontend
                   Development & UX
                 </span>
@@ -50,7 +50,7 @@ export default function Home() {
             <h2 className="font-sans text-2xl pb-3 dark:neutral-200">
               About me
             </h2>
-            <p className="text-xl dark:text-slate-400">
+            <p className="text-lg dark:text-slate-400 text-justify">
               I bring over a decade of experience in frontend development, with
               a strong foundation in building scalable, user-focused
               applications. Alongside my technical background, I have deep
@@ -82,7 +82,7 @@ export default function Home() {
             <h2 className="font-sans text-2xl pb-3 dark:neutral-200">
               Contact
             </h2>
-            <p className="text-xl dark:text-slate-400">
+            <p className="text-lg dark:text-slate-400 text-justify">
               Are you looking for a technical leader who can translate complex
               requirements into successful products? With a background spanning
               software development, product strategy, and UX collaboration, I
