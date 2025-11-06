@@ -2,14 +2,12 @@ import {
   Braces,
   PencilRuler,
   Palette,
-  Figma,
-  SquareKanban,
-  Linkedin,
-  Github,
-  Instagram,
   UserRoundCheck,
   ListChecks,
   PackageSearch,
+  Linkedin,
+  Github,
+  Instagram,
 } from "lucide-react";
 import { ReactElement } from "react";
 import { contactInfoTypes } from "./types";

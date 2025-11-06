@@ -1,4 +1,3 @@
-import { ThemeProvider } from "@/app/theme-provider";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -19,15 +18,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${inter.className} dark:bg-dark-primary`}>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="dark"
-          enableSystem={false}
-          disableTransitionOnChange
-        >
-          {children}
-        </ThemeProvider>
+      <body className={`${inter.className} bg-[#0f172a]`}>
+        {children}
         <GoogleAnalytics gaId="G-E71VE5X624" />
       </body>
     </html>

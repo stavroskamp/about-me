@@ -3,7 +3,7 @@ import { contactInfoTypes } from "@/app/types";
 
 const iconLink = (contact: contactInfoTypes) => (
   <a
-    className="hover:cursor-pointer dark:text-pink-400 hover:animate-pulse"
+    className="hover:cursor-pointer text-pink-400 hover:animate-pulse"
     href={contact.url}
     target="_blank"
     aria-label={`link for my ${contact.name} page`}
@@ -14,13 +14,13 @@ const iconLink = (contact: contactInfoTypes) => (
 
 export default function Footer() {
   return (
-    <footer className="px-8 my-2 flex flex-col justify-center items-center align-middle dark:bg-dark-primary">
-      <div className="flex flex-row gap-4 align-middle dark:text-slate-400">
+    <footer className="px-8 my-2 flex flex-col justify-center items-center align-middle bg-dark-primary">
+      <div className="flex flex-row gap-4 align-middle text-slate-400">
         {iconLink(contactData.linkedin)}
         {iconLink(contactData.github)}
         {iconLink(contactData.instagram)}
       </div>
-      <div className="flex dark:text-slate-400 max-w-screen-xl dark:bg-dark-primary">
+      <div className="flex text-slate-400 max-w-screen-xl bg-dark-primary">
         Stavros Kampanakis - {new Date().getFullYear()}
       </div>
     </footer>
