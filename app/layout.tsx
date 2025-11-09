@@ -13,12 +13,11 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        {/* CookieYes Banner */}
         <Script
           id="cookieyes-banner"
           src="https://app.cookieyes.com/dDiC-AbWdGRTjRvVQqvLGKuGBgqyE_WAfKKjiBVCNXJP067gqweMhGQth6oOjQk4H_C_gdoQ0GAXkH9Nzi1fK07bYUX4H4yjuFvzqRUb3tf_Ufm8FbhcUqmXhZHkIU7VBGhx9V3h3mMfYjcdr3ykWSyqdd7EJNFNrqVhK_l-tpk="
@@ -30,6 +29,7 @@ export default function RootLayout({
           strategy="beforeInteractive"
         />
 
+        {/* Google Analytics - blocked until consent */}
         <Script
           type="text/plain"
           data-cookieyes="analytics"
@@ -39,14 +39,18 @@ export default function RootLayout({
         <Script
           type="text/plain"
           data-cookieyes="analytics"
+          id="gtag-init"
           strategy="afterInteractive"
         >
           {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-E71VE5X624');
-        `}
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            // Wait for CookieYes consent before initializing GA
+            document.addEventListener('cookieyesConsent', function() {
+              gtag('js', new Date());
+              gtag('config', 'G-E71VE5X624');
+            });
+          `}
         </Script>
       </head>
       <body className={`${inter.className} bg-[#0f172a]`}>{children}</body>
