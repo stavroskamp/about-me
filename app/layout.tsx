@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { GoogleAnalytics } from "@next/third-parties/google";
+import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,6 +19,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <Script
+          strategy="beforeInteractive"
+          src={
+            "https://cdn-cookieyes.com/client_data/58ea737f5315e1b39c887a23/script.js"
+          }
+        />
+      </head>
       <body className={`${inter.className} bg-[#0f172a]`}>
         {children}
         <GoogleAnalytics gaId="G-E71VE5X624" />
