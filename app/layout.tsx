@@ -19,19 +19,17 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        {/* CookieYes scripts */}
         <Script
           id="cookieyes-banner"
-          src="https://app.cookieyes.com/dDiC-…"
+          src="https://app.cookieyes.com/dDiC-AbWdGRTjRvVQqvLGKuGBgqyE_WAfKKjiBVCNXJP067gqweMhGQth6oOjQk4H_C_gdoQ0GAXkH9Nzi1fK07bYUX4H4yjuFvzqRUb3tf_Ufm8FbhcUqmXhZHkIU7VBGhx9V3h3mMfYjcdr3ykWSyqdd7EJNFNrqVhK_l-tpk="
           strategy="beforeInteractive"
         />
         <Script
           id="cookieyes-main"
-          src="https://cdn-cookieyes.com/client_data/…/script.js"
+          src="https://cdn-cookieyes.com/client_data/58ea737f5315e1b39c887a23/script.js"
           strategy="beforeInteractive"
         />
 
-        {/* Google Analytics, blocked until consent */}
         <Script
           type="text/plain"
           data-cookieyes="analytics"
@@ -39,11 +37,11 @@ export default function RootLayout({
         />
         <Script type="text/plain" data-cookieyes="analytics">
           {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-E71VE5X624');
-          `}
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-E71VE5X624');
+        `}
         </Script>
       </head>
       <body className={`${inter.className} bg-[#0f172a]`}>{children}</body>
