@@ -21,10 +21,14 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head>
         <Script
+          type="text/javascript"
           strategy="beforeInteractive"
-          src={
-            "https://cdn-cookieyes.com/client_data/58ea737f5315e1b39c887a23/script.js"
-          }
+          src="https://app.cookieyes.com/dDiC-AbWdGRTjRvVQqvLGKuGBgqyE_WAfKKjiBVCNXJP067gqweMhGQth6oOjQk4H_C_gdoQ0GAXkH9Nzi1fK07bYUX4H4yjuFvzqRUb3tf_Ufm8FbhcUqmXhZHkIU7VBGhx9V3h3mMfYjcdr3ykWSyqdd7EJNFNrqVhK_l-tpk="
+        />
+        <Script
+          id="cookieyes"
+          type="text/javascript"
+          src="https://cdn-cookieyes.com/client_data/58ea737f5315e1b39c887a23/script.js"
         />
       </head>
       <body className={`${inter.className} bg-[#0f172a]`}>
