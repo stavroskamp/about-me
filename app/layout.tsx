@@ -17,6 +17,16 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        <Script id="gtm-consent" strategy="beforeInteractive">
+          {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('consent', 'default', {
+            'ad_storage': 'denied',
+            'analytics_storage': 'denied'
+          });
+        `}
+        </Script>
         <Script id="gtm" strategy="afterInteractive">
           {`
           (function(w,d,s,l,i){
