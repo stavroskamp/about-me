@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { GoogleAnalytics } from "@next/third-parties/google";
-import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,12 +19,14 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <Script
-          id="Cookiebot"
-          src="https://consent.cookiebot.com/uc.js"
-          data-cbid="0568a297-c9c0-43d6-9fdf-12f89f55e169"
-          data-blockingmode="auto"
+        <script
           type="text/javascript"
+          src="https://app.cookieyes.com/dDiC-AbWdGRTjRvVQqvLGKuGBgqyE_WAfKKjiBVCNXJP067gqweMhGQth6oOjQk4H_C_gdoQ0GAXkH9Nzi1fK07bYUX4H4yjuFvzqRUb3tf_Ufm8FbhcUqmXhZHkIU7VBGhx9V3h3mMfYjcdr3ykWSyqdd7EJNFNrqVhK_l-tpk="
+        />
+        <script
+          id="cookieyes"
+          type="text/javascript"
+          src="https://cdn-cookieyes.com/client_data/58ea737f5315e1b39c887a23/script.js"
         />
       </head>
       <body className={`${inter.className} bg-[#0f172a]`}>
