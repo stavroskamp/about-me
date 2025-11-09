@@ -17,43 +17,33 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        {/* CookieYes Banner */}
-        <Script
-          id="cookieyes-banner"
-          src="https://app.cookieyes.com/dDiC-AbWdGRTjRvVQqvLGKuGBgqyE_WAfKKjiBVCNXJP067gqweMhGQth6oOjQk4H_C_gdoQ0GAXkH9Nzi1fK07bYUX4H4yjuFvzqRUb3tf_Ufm8FbhcUqmXhZHkIU7VBGhx9V3h3mMfYjcdr3ykWSyqdd7EJNFNrqVhK_l-tpk="
-          strategy="beforeInteractive"
-        />
-        <Script
-          id="cookieyes-main"
-          src="https://cdn-cookieyes.com/client_data/58ea737f5315e1b39c887a23/script.js"
-          strategy="beforeInteractive"
-        />
-
-        {/* Google Analytics - blocked until consent */}
-        <Script
-          type="text/plain"
-          data-cookieyes="analytics"
-          src="https://www.googletagmanager.com/gtag/js?id=G-E71VE5X624"
-          strategy="afterInteractive"
-        />
-        <Script
-          type="text/plain"
-          data-cookieyes="analytics"
-          id="gtag-init"
-          strategy="afterInteractive"
-        >
+        <Script id="gtm" strategy="afterInteractive">
           {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            // Wait for CookieYes consent before initializing GA
-            document.addEventListener('cookieyesConsent', function() {
-              gtag('js', new Date());
-              gtag('config', 'G-E71VE5X624');
-            });
-          `}
+          (function(w,d,s,l,i){
+            w[l]=w[l]||[];
+            w[l].push({'gtm.start': new Date().getTime(), event:'gtm.js'});
+            var f=d.getElementsByTagName(s)[0],
+                j=d.createElement(s), dl=l!='dataLayer'?'&l='+l:'';
+            j.async=true;
+            j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+            f.parentNode.insertBefore(j,f);
+          })(window,document,'script','dataLayer','GTM-NXZDTJSB');
+        `}
         </Script>
       </head>
-      <body className={`${inter.className} bg-[#0f172a]`}>{children}</body>
+      <body className={`${inter.className} bg-[#0f172a]`}>
+        {/* GTM noscript fallback */}
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-NXZDTJSB"
+            height="0"
+            width="0"
+            style={{ display: "none", visibility: "hidden" }}
+            title="GTM"
+          />
+        </noscript>
+        {children}
+      </body>
     </html>
   );
 }
