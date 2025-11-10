@@ -18,11 +18,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head>
         {/* Usermetric Pixel */}
-        <Script
-          src="https://app.usermetric.io/pixel/jnVhUNQRS3ulIeJ8"
-          strategy="afterInteractive"
-          defer
-        />
+        <Script src="https://app.usermetric.io/pixel/jnVhUNQRS3ulIeJ8" defer />
       </head>
       <body className={`${inter.className} bg-[#0f172a]`}>{children}</body>
     </html>
