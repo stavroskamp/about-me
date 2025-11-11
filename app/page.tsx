@@ -3,7 +3,8 @@ import Navigation from "./components/navigation/Navigation";
 import Footer from "./components/footer/Footer";
 import SkillCard from "./components/skill-card/SkillCard";
 import { contactInfoTypes } from "./types";
-import { skillData, contactData } from "./data";
+import { skillData, contactData, projectData } from "./data";
+import ProjectCard from "./components/project-card/ProjectCard";
 
 export default function Home() {
   const getLink = ({ url, name }: contactInfoTypes) => (
@@ -71,6 +72,21 @@ export default function Home() {
                   title={skill.title}
                   type={skill.type}
                   tags={skill.tags}
+                />
+              ))}
+            </div>
+          </div>
+          <div>
+            <div className="relative bottom-20" id="projects" />
+            <h2 className="font-sans text-2xl pb-3 text-white">Projects</h2>
+            <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-4">
+              {projectData.map((project) => (
+                <ProjectCard
+                  key={project.id}
+                  logo={project.logo}
+                  title={project.title}
+                  description={project.description}
+                  url={project.url}
                 />
               ))}
             </div>

@@ -15,12 +15,14 @@ import { contactInfoTypes } from "./types";
 const iconsSize = 42;
 
 export const skillData: {
+  id: string;
   icon: ReactElement;
   title: string;
   type: string;
   tags: string[];
 }[] = [
   {
+    id: "1",
     icon: <PackageSearch size={iconsSize} />,
     title: "Product Development",
     type: "Product skills",
@@ -32,6 +34,7 @@ export const skillData: {
     ],
   },
   {
+    id: "2",
     icon: <ListChecks size={iconsSize} />,
     title: "Product Delivery",
     type: "Product skills",
@@ -43,6 +46,7 @@ export const skillData: {
     ],
   },
   {
+    id: "3",
     icon: <UserRoundCheck size={iconsSize} />,
     title: "Cross-functional leadership",
     type: "Product skills",
@@ -53,18 +57,21 @@ export const skillData: {
     ],
   },
   {
+    id: "4",
     icon: <Braces size={iconsSize} />,
     title: "Javascript",
     type: "Technical skills",
     tags: ["React", "Next.js", "GraphQL", "Typescript", "ES6+", "Jest"],
   },
   {
+    id: "5",
     icon: <PencilRuler size={iconsSize} />,
     title: "HTML / CSS",
     type: "Technical skills",
     tags: ["Chakra UI", "Tailwind CSS", "Styled components", "SASS"],
   },
   {
+    id: "6",
     icon: <Palette size={iconsSize} />,
     title: "UI / UX",
     type: "Design skills",
@@ -77,6 +84,22 @@ export const skillData: {
       "Prototyping",
       "Wireframing",
     ],
+  },
+];
+
+export const projectData: {
+  id: string;
+  logo: any;
+  title: string;
+  description: string;
+  url: string;
+}[] = [
+  {
+    id: "1",
+    logo: "/seismio-logo-512.png",
+    title: "Seismio",
+    description: " Live earthquake maps worldwide",
+    url: "https://seismio.com",
   },
 ];
 
