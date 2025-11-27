@@ -98,7 +98,7 @@ export const projectData: {
     id: "1",
     logo: "/seismio-logo-512.png",
     title: "Seismio",
-    description: " Live earthquake maps worldwide",
+    description: "Explore recent earthquakes on an interactive map",
     url: "https://seismio.com",
   },
 ];
